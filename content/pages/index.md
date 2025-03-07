@@ -593,7 +593,7 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: List of features here
+      text: Featured Exchanges
       color: text-primary
       styles:
         self:
