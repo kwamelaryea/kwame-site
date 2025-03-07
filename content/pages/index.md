@@ -355,7 +355,7 @@ sections:
         alignItems: center
     type: GenericSection
   - title:
-      text: Business Consulting
+      text: Centralised Exchange Reviews
       color: text-dark
       type: TitleBlock
     subtitle: Be in good company
