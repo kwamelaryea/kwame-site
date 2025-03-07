@@ -323,7 +323,7 @@ sections:
       text: Decenralised Exchange Reviews
       color: text-dark
       type: TitleBlock
-    subtitle: Increase your reach
+    subtitle: Trade while you self custody your assets
     text: >
       A service that helps businesses to manage their social media accounts and
       posts.
