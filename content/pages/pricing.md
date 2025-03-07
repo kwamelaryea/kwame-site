@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: Reviews
 slug: pricing
 sections:
   - title:
