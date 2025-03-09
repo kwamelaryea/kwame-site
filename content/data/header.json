@@ -65,7 +65,7 @@
         {
             "type": "Link",
             "label": "Contact Us",
-            "altText": "",
+            "altText": "Contact Us Form",
             "url": "/",
             "showIcon": false,
             "icon": "arrowRight",
