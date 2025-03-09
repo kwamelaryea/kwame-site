@@ -39,7 +39,7 @@
                 "type": "Link",
                 "label": "Podcasts",
                 "altText": "Podcasts page",
-                "url": "/",
+                "url": "/podcasts",
                 "showIcon": false,
                 "icon": "arrowRight",
                 "iconPosition": "right",
