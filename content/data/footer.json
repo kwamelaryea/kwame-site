@@ -23,7 +23,8 @@
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Link",
+                "altText": "Articles page"
             },
             {
                 "label": "Documentation",
