@@ -172,7 +172,7 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: Grow your business 10x faster
+      text: Be Ahead of The Curve
       color: text-dark
       styles:
         self:
