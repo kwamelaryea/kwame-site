@@ -155,7 +155,7 @@ sections:
         elementId: ''
         type: Button
     badge:
-      label: This is a badge
+      label: Research areas
       color: text-primary
       styles:
         self:
