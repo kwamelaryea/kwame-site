@@ -32,7 +32,7 @@
         {
             "label": "Podcast",
             "altText": "Podcast Page",
-            "url": "/careers",
+            "url": "/podcast",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
