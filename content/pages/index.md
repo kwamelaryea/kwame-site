@@ -85,7 +85,7 @@ sections:
     type: GenericSection
   - type: FeaturedItemsSection
     title:
-      text: Key Benefits
+      text: Areas of Interest
       color: text-dark
       styles:
         self:
