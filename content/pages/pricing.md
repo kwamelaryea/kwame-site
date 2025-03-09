@@ -1,5 +1,5 @@
 ---
-title: Reviews
+title: Portfolio
 slug: pricing
 sections:
   - title:
