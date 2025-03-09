@@ -202,7 +202,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Imaginengine Sessions
+      text: imaginEngine Sessions
       color: text-dark
       styles:
         self:
