@@ -216,7 +216,7 @@ sections:
     actions: []
     media:
       type: VideoBlock
-      title: Title of the video
+      title: Imaginengine Sessions Ep 1
       url: 'https://youtu.be/7mn_EzoIpuo'
       autoplay: false
       loop: false
