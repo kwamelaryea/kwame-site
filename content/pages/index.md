@@ -36,7 +36,7 @@ sections:
         elementId: ''
         type: Button
     media:
-      url: /images/digital_wallet.jpg
+      url: /images/image (3).webp
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
