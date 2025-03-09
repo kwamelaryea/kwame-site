@@ -14,7 +14,7 @@ sections:
       git commit, git workflows and collaboration just work.
     actions:
       - label: Book Now
-        altText: ''
+        altText: Book a Consultation With Us
         url: /
         showIcon: false
         icon: arrowRight
