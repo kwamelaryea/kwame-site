@@ -63,7 +63,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Exploring technologies before adoption
     items:
       - type: FeaturedItem
         title: Generative AI and Agents
