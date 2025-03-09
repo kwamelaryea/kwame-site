@@ -597,7 +597,7 @@ sections:
       text: Get In Touch
       color: text-dark
       type: TitleBlock
-    subtitle: Section with a form subtitle
+    subtitle: Future-Proof Your Brand
     text: >
       Whether you need more in information or you would like to get in touch for
       partnership, feel free to use the form and drop us a message. 
