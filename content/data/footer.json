@@ -38,7 +38,7 @@
             {
                 "type": "Link",
                 "label": "Podcasts",
-                "altText": "",
+                "altText": "Podcasts page",
                 "url": "/",
                 "showIcon": false,
                 "icon": "arrowRight",
