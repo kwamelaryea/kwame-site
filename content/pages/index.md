@@ -19,12 +19,6 @@ sections:
       trends. As your trusted R\&D lab, we stay at the forefront of emerging
       technologies, experimenting with cutting-edge solutions to ensure your
       brand leads the way.
-
-
-      Whether it’s leveraging blockchain for secure and scalable systems or
-      embracing AI-powered creativity, we propose, evaluate, build, and deploy
-      visionary strategies tailored to your goals. Let us help you unlock new
-      possibilities and redefine what’s possible.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
