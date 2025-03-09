@@ -4,7 +4,7 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Unblock your team boost your time to production
+      text: Driving Innovation in the AI and Blockchain Era
       color: text-dark
       type: TitleBlock
     subtitle: Subtitle goes here
