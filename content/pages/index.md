@@ -535,7 +535,7 @@ sections:
         type: FeaturedItem
         actions:
           - type: Button
-            label: Get started
+            label: Read More
             altText: ''
             url: /
             showIcon: false
