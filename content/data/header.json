@@ -23,7 +23,7 @@
         {
             "label": "How We Think",
             "altText": "Articles",
-            "url": "/blog",
+            "url": "/articles",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
