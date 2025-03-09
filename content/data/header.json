@@ -31,7 +31,7 @@
         },
         {
             "label": "Podcast",
-            "altText": "Careers page",
+            "altText": "Podcast Page",
             "url": "/careers",
             "icon": "arrowRight",
             "iconPosition": "right",
