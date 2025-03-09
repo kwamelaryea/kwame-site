@@ -41,7 +41,7 @@ sections:
       elementId: ''
       type: ImageBlock
     badge:
-      label: This is a badge
+      label: Welcome to the Imagination Era
       color: text-primary
       type: Badge
     elementId: ''
