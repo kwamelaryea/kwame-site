@@ -7,7 +7,7 @@ sections:
       text: Driving Innovation in the AI and Blockchain Era
       color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Empowering Leading Brands to Shape the Future of Technology
     text: >
       A Netlify Create website is a git repo that you own. Every code commit is
       instantly reflected in the visual editor and since every visual edit is a
