@@ -69,9 +69,10 @@ sections:
         title: Generative AI and Agents
         subtitle: Creativity Unleashed
         text: >+
-          There is now a world of decentralised storage, compute, video hosting,
-          and social platforms. Each with their own cultures, communities and
-          benefits. We can help you navigate.
+          AI is being talked about everywhere but current most use cases are
+          barely scratching the surface of what is possible, we are well placed
+          to help you leverage the right models with your data or help you
+          unleash agents.
 
 
 
