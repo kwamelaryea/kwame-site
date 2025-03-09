@@ -179,11 +179,11 @@ sections:
           textAlign: center
       type: TitleBlock
     subtitle: This is a subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      Whether it’s leveraging blockchain for secure and scalable systems or
+      embracing AI-powered creativity, we propose, evaluate, build, and deploy
+      visionary strategies tailored to your goals. Let us help you unlock new
+      possibilities and redefine what’s possible.
     badge:
       label: Key Benefits
       color: text-primary
