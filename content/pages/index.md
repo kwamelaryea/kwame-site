@@ -599,8 +599,8 @@ sections:
       type: TitleBlock
     subtitle: Future-Proof Your Brand
     text: >
-      Whether you need more in information or you would like to get in touch for
-      partnership, feel free to use the form and drop us a message. 
+      Whether you need more information or you would like to get in touch for an
+      initial consultation, feel free to use the form and drop us a message.
     media:
       fields:
         - name: name
