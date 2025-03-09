@@ -38,7 +38,7 @@ sections:
     media:
       type: ImageBlock
       url: /images/astronaut.png
-      altText: Image alt text placeholder
+      altText: Astronaut Hero Image
       elementId: ''
       styles:
         self:
