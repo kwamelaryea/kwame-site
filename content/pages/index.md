@@ -66,7 +66,7 @@ sections:
     subtitle: Subtitle goes here
     items:
       - type: FeaturedItem
-        title: LLMs and Generative AI
+        title: Generative AI and Agents
         subtitle: Creativity Unleashed
         text: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
