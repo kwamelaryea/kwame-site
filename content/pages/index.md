@@ -143,7 +143,7 @@ sections:
             flexDirection: row
         type: FeaturedItem
     actions:
-      - label: Get started
+      - label: Contact Us
         altText: ''
         url: /
         showIcon: false
