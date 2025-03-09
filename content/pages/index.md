@@ -178,7 +178,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is a subtitle
+    subtitle: ''
     text: >
       Whether it’s leveraging blockchain for secure and scalable systems or
       embracing AI-powered creativity, we propose, evaluate, build, and deploy
