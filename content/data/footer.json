@@ -34,6 +34,17 @@
                 "style": "secondary",
                 "type": "Link",
                 "altText": "Portfolio page"
+            },
+            {
+                "type": "Link",
+                "label": "See Tutorials",
+                "altText": "",
+                "url": "/",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
             }
         ],
         "type": "FooterLinksGroup"
