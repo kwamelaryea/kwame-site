@@ -57,7 +57,7 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Areas of Interest
+      text: Areas of Expertise
       color: text-dark
       styles:
         self:
