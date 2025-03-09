@@ -123,7 +123,7 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: Decentralised Products
+      - title: "Web3\_ Products"
         subtitle: Democratised Access
         text: >
           There is now a world of decentralised storage, compute, video hosting,
