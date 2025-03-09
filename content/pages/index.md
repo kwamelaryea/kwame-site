@@ -68,10 +68,14 @@ sections:
       - type: FeaturedItem
         title: Generative AI and Agents
         subtitle: Creativity Unleashed
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >+
+          There is now a world of decentralised storage, compute, video hosting,
+          and social platforms. Each with their own cultures, communities and
+          benefits. We can help you navigate.
+
+
+
+
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
