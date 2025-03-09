@@ -9,7 +9,7 @@
         "title": "Product",
         "links": [
             {
-                "label": "Features",
+                "label": "Home",
                 "altText": "Features page",
                 "url": "/",
                 "icon": "arrowRight",
