@@ -41,7 +41,7 @@ sections:
       elementId: ''
       type: ImageBlock
     badge:
-      label: Welcome to the Imagination Era
+      label: Thesis
       color: text-primary
       type: Badge
     elementId: ''
