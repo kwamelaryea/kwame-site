@@ -67,7 +67,7 @@ sections:
     items:
       - type: FeaturedItem
         title: LLMs and Generative AI
-        subtitle: Numbers Done
+        subtitle: Creativity Unleashed
         text: >-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
