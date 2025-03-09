@@ -36,7 +36,7 @@ sections:
         elementId: ''
         type: Button
     media:
-      url: /images/image (3).webp
+      url: /images/cyberpunk-girl.png
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
