@@ -10,9 +10,8 @@ sections:
     subtitle: Empowering Leading Brands to Shape the Future of Technology
     text: >
       Welcome to the new age of imagination, where innovation knows no bounds.
-      At Your Agency Name, we specialize in helping forward-thinking brands
-      thrive in this AI-driven and blockchain-ready landscape.
-
+      At imaginEngine, we specialize in helping forward-thinking brands thrive
+      in this AI-driven and blockchain-ready landscape.
 
 
       Our approach is simple: the limits are no longer defined by what you can
@@ -20,7 +19,6 @@ sections:
       trends. As your trusted R\&D lab, we stay at the forefront of emerging
       technologies, experimenting with cutting-edge solutions to ensure your
       brand leads the way.
-
 
 
       Whether it’s leveraging blockchain for secure and scalable systems or
