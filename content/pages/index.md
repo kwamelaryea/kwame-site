@@ -36,10 +36,13 @@ sections:
         elementId: ''
         type: Button
     media:
-      url: /images/astronaut.png
-      altText: Unblock your team boost your time to production preview
-      elementId: ''
       type: ImageBlock
+      url: /images/hero2.svg
+      altText: Image alt text placeholder
+      elementId: ''
+      styles:
+        self:
+          borderRadius: medium
     badge:
       label: Thesis
       color: text-primary
