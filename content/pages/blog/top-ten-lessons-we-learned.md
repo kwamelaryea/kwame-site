@@ -1,5 +1,7 @@
 ---
-title: The Top Ten Lessons We’ve Learned Since Our Initial Launch
+title: >-
+  Why You’re Going to Need a Crypto Wallet: The Fight Against Deepfakes and the
+  Future of Trust
 slug: top-ten-lessons-we-learned
 date: '2025-01-02'
 excerpt: >-
