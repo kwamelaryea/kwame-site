@@ -82,7 +82,7 @@
             "iconPosition": "right",
             "style": "primary",
             "type": "Button",
-            "altText": "Book Now Button"
+            "altText": "Book a Consultation With Us"
         }
     ],
     "variant": "logo-left-primary-nav-centered",
