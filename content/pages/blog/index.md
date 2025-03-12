@@ -8,7 +8,7 @@ topSections:
       text: 'How We Think '
       color: text-dark
       type: TitleBlock
-    subtitle: This is the subtitle
+    subtitle: A selection of articles breaking down our theories
     posts:
       - content/pages/blog/why-you-are-going-to-need-a-crypto-wallet.md
     showThumbnail: true
