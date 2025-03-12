@@ -82,7 +82,7 @@
             "iconPosition": "right",
             "style": "primary",
             "type": "Button",
-            "altText": "Book Now"
+            "altText": "Book Now Button"
         }
     ],
     "variant": "logo-left-primary-nav-centered",
