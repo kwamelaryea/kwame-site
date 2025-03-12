@@ -145,7 +145,7 @@ sections:
     actions:
       - label: Contact Us
         altText: Contact Us
-        url: /
+        url: /#contact
         showIcon: false
         icon: arrowRight
         iconPosition: right
