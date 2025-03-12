@@ -144,7 +144,7 @@ sections:
         type: FeaturedItem
     actions:
       - label: Contact Us
-        altText: ''
+        altText: Contact Us
         url: /
         showIcon: false
         icon: arrowRight
