@@ -22,7 +22,7 @@ sections:
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
-        url: /
+        url: /#contact
         showIcon: false
         icon: arrowRight
         iconPosition: right
