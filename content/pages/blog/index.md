@@ -14,7 +14,7 @@ topSections:
     showThumbnail: true
     showExcerpt: true
     showDate: true
-    showAuthor: true
+    showAuthor: false
     variant: big-list
     colors: bg-light-fg-dark
     styles:
