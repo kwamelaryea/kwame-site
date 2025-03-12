@@ -10,7 +10,7 @@ excerpt: >-
   dolor quas ad odit ipsum qui quia eius.
 featuredImage:
   url: /images/freepik__adjust__30868.png
-  altText: Thumbnail
+  altText: Why you need a crypto wallet
   type: ImageBlock
   styles:
     self:
