@@ -10,7 +10,7 @@ excerpt: >-
   These AI-generated fakes are so convincing that they’re already disrupting
   lives, and within the next year, this crisis will only deepen.
 featuredImage:
-  url: /images/freepik__adjust__30868.png
+  url: /images/why-you-need-a-crypto-wallet-thumb.png
   altText: Why you need a crypto wallet
   type: ImageBlock
   styles:
