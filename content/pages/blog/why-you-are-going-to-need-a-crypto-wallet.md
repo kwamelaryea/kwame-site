@@ -5,9 +5,10 @@ title: >-
 slug: why-you-are-going-to-need-a-crypto-wallet
 date: '2025-03-12'
 excerpt: >-
-  Sit ratione eligendi et quis distinctio et maiores accusantium aut accusamus
-  facere sit repellat quidem qui alias nostrum et earum enim. Cum quis sint eos
-  dolor quas ad odit ipsum qui quia eius.
+  Imagine a world where you can’t trust what you see or hear. That’s not a
+  sci-fi plot—it’s the reality we’re stepping into with the rise of deepfakes.
+  These AI-generated fakes are so convincing that they’re already disrupting
+  lives, and within the next year, this crisis will only deepen.
 featuredImage:
   url: /images/freepik__adjust__30868.png
   altText: Why you need a crypto wallet
