@@ -60,4 +60,4 @@ We’re heading toward a time where decentralized systems are essential for trus
 
 Next time you’re asked to prove a video isn’t you, wouldn’t it feel better to have cryptographic proof at your fingertips?
 
-**Let’s Talk**: How do you see decentralized identity shaping our future? Drop your thoughts below—I’d love to hear them.
+**Let’s Talk**: How do you see decentralized identity shaping our future? Contact Us—I’d love to hear them.
