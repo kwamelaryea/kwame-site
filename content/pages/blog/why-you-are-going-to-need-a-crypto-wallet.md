@@ -2,7 +2,7 @@
 title: >-
   Why You’re Going to Need a Crypto Wallet: The Fight Against Deepfakes and the
   Future of Trust
-slug: top-ten-lessons-we-learned
+slug: why-you-are-going-to-need-a-crypto-wallet
 date: '2025-03-12'
 excerpt: >-
   Sit ratione eligendi et quis distinctio et maiores accusantium aut accusamus
