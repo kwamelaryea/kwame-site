@@ -55,11 +55,11 @@ sections:
         self:
           textAlign: left
     subtitle: ''
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      In this episode of Imagine Engine, Kwame Laryea and Nana Dankwa dive into
+      the high-stakes world of AI. They dissect the explosive “Stargate”
+      initiative, the jaw-dropping funding numbers, and the fierce rivalry
+      between Elon Musk and Sam Altman. 
     actions: []
     media:
       type: VideoBlock
