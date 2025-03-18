@@ -138,7 +138,7 @@ sections:
       styles:
         self:
           textAlign: left
-    subtitle: Section with a video subtitle
+    subtitle: ''
     text: "In this episode, we discuss how human imagination has fueled creativity and technological progress, revolutionizing industries like music, storytelling, and education. \U0001F30D Dive into the Age of Intelligence, where technology meets human ingenuity.\n"
     actions: []
     media:
