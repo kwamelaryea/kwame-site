@@ -145,8 +145,8 @@ sections:
       type: VideoBlock
       title: Title of the video
       url: 'https://youtu.be/7mn_EzoIpuo?si=xnZY002Oq6eSnbzo'
-      autoplay: true
-      loop: true
+      autoplay: false
+      loop: false
       muted: true
       controls: false
       aspectRatio: '16:9'
