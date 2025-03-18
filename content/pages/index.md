@@ -31,7 +31,7 @@ sections:
         type: Button
     media:
       type: ImageBlock
-      url: /images/cyberpunk fashion.png
+      url: /images/imaginengine hero image.svg
       altText: Astronaut Hero Image
       elementId: ''
       styles:
