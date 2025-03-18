@@ -65,7 +65,9 @@ sections:
     actions: []
     media:
       type: VideoBlock
-      title: Title of the video
+      title: >-
+        Imaginengine Sessions 3: The AI Controversy Unpacked: Power Plays,
+        Surveillance & Future Innovation!
       url: 'https://youtu.be/4qqe6drJLUw?si=VpOddtkkuYy40GZB'
       autoplay: false
       loop: false
