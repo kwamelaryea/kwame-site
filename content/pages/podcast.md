@@ -5,7 +5,9 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Generic section with a video
+      text: >-
+        Imaginengine Sessions 4: The AI War Continues: Open Source,
+        Centralization & Future of Innovation!!!
       color: text-dark
       styles:
         self:
