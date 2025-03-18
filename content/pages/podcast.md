@@ -131,7 +131,9 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Generic section with a video
+      text: >-
+        Imaginengine Sessions Ep. 1: From Fire to AI – How Technology Drives
+        Creativity
       color: text-dark
       styles:
         self:
