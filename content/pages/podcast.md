@@ -21,7 +21,9 @@ sections:
     actions: []
     media:
       type: VideoBlock
-      title: Title of the video
+      title: >-
+        Imaginengine Sessions 4: The AI War Continues: Open Source,
+        Centralization & Future of Innovation!!!
       url: 'https://youtu.be/gQvsvUJKz0g'
       autoplay: false
       loop: false
