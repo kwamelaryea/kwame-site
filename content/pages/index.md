@@ -221,7 +221,7 @@ sections:
       url: 'https://youtu.be/7mn_EzoIpuo'
       autoplay: false
       loop: false
-      muted: true
+      muted: false
       controls: false
       aspectRatio: '16:9'
       styles:
