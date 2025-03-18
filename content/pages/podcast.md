@@ -139,11 +139,7 @@ sections:
         self:
           textAlign: left
     subtitle: Section with a video subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: "In this episode, we discuss how human imagination has fueled creativity and technological progress, revolutionizing industries like music, storytelling, and education. \U0001F30D Dive into the Age of Intelligence, where technology meets human ingenuity.\n"
     actions: []
     media:
       type: VideoBlock
