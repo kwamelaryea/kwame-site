@@ -47,7 +47,9 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Generic section with a video
+      text: >-
+        Imaginengine Sessions 3: The AI Controversy Unpacked: Power Plays,
+        Surveillance & Future Innovation!
       color: text-dark
       styles:
         self:
