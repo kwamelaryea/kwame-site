@@ -13,11 +13,11 @@ sections:
         self:
           textAlign: left
     subtitle: ''
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      In this episode of Imagine Engine, the conversation dives deeper into the
+      global battle for AI supremacy. The hosts dissect the multi-layered race
+      between nations and tech giants, debating the merits of centralized
+      control versus open source models.
     actions: []
     media:
       type: VideoBlock
