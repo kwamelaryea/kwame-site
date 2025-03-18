@@ -143,7 +143,9 @@ sections:
     actions: []
     media:
       type: VideoBlock
-      title: Title of the video
+      title: >-
+        Imaginengine Sessions Ep. 1: From Fire to AI – How Technology Drives
+        Creativity of the video
       url: 'https://youtu.be/7mn_EzoIpuo?si=xnZY002Oq6eSnbzo'
       autoplay: false
       loop: false
