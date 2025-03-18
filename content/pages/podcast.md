@@ -95,11 +95,7 @@ sections:
         self:
           textAlign: left
     subtitle: ''
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: "Topics Covered:\n\U0001F916 How AI and generative AI differ—and why that matters\n\U0001F621 Why creatives are angry about the “scraping” of their work for training data\n\U0001F517 How blockchain and crypto might help artists protect their art in the future\n\U0001F4BB Whether developers and coders are also on the chopping block as AI learns to write its own code\n\U0001F31F Will.i.am’s inspiring take on how these new AI “dream tools” can spawn entirely new industries\n\U0001F4A1 Why this is the moment for bold imagination rather than fear\n"
     actions: []
     media:
       type: VideoBlock
