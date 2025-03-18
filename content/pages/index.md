@@ -219,7 +219,7 @@ sections:
       type: VideoBlock
       title: Imaginengine Sessions Ep 1
       url: 'https://youtu.be/7mn_EzoIpuo'
-      autoplay: false
+      autoplay: true
       loop: false
       muted: true
       controls: false
