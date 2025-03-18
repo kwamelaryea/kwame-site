@@ -103,7 +103,9 @@ sections:
     actions: []
     media:
       type: VideoBlock
-      title: Title of the video
+      title: >-
+        Imaginengine Sessions 2: The AI Controversy: Will It Kill Creativity or
+        Unlock a New Era?
       url: 'https://youtu.be/oRKo3G34nfg?si=nT8FtI9E9ARzV6Mh'
       autoplay: false
       loop: false
