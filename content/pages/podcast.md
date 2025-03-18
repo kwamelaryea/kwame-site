@@ -91,7 +91,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: "The AI Controversy: Will It Kill Creativity or Unlock a New Era? \U0001F916"
+      text: "Imaginengine Sessions 2: The AI Controversy: Will It Kill Creativity or Unlock a New Era? \U0001F916"
       color: text-dark
       styles:
         self:
