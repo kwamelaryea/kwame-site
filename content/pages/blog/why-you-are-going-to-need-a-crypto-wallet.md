@@ -18,7 +18,9 @@ featuredImage:
       borderRadius: medium
 isFeatured: false
 seo:
-  metaTitle: The Top Ten Lessons We’ve Learned Since Our Initial Launch
+  metaTitle: >-
+    Why You’re Going to Need a Crypto Wallet: The Fight Against Deepfakes and
+    the Future of Trust
   metaDescription: >-
     Imagine a world where you can’t trust what you see or hear. That’s not a
     sci-fi plot—it’s the reality we’re stepping into with the rise of deepfakes.
