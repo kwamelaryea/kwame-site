@@ -99,6 +99,7 @@ seo:
     generative AI—a tool that’s been in the wild for just over three years. Yet,
     despite its potential, skeptics are already dismissing it as a factory for
     generic slop. And honestly? They’re not entirely wrong.
+  metaTitle: 'Imagination: The New Superpower in the Age of AI'
 colors: bg-light-fg-dark
 styles:
   self:
