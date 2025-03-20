@@ -92,6 +92,7 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
+  socialImage: /images/imagination-engine.svg
 colors: bg-light-fg-dark
 styles:
   self:
