@@ -92,7 +92,7 @@ seo:
 colors: bg-light-fg-dark
 styles:
   self:
-    flexDirection: row
+    flexDirection: col
 ---
 ![](/images/bafybeig3gcudx3hq5rj67o4etdcy2a27qsuweftsgbfplzywiqrh65qmyq.webp)
 
