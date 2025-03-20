@@ -11,7 +11,7 @@ excerpt: >-
   generic slop. And honestly? They’re not entirely wrong.
 featuredImage:
   type: ImageBlock
-  url: /images/imagination-engine.svg
+  url: /images/Leonardo_Phoenix_10_A_breathtakingly_vivid_and_cinematic_photo_1.jpg
   altText: imaginEngine-imagination-engine
   elementId: ''
   styles:
