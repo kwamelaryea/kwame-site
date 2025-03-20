@@ -8,7 +8,7 @@ excerpt: >-
   introduction of ERC-721—an Ethereum Improvement Proposal—ignited a spark that
   brought Non-Fungible Tokens (NFTs) into the spotlight. While unique digital
   assets like Rare Pepes and Spells of Genesis had been floating around prior to
-  this, it was ERC-721 that gave us the iconic projects that grabbed headlines: 
+  this, it was ERC-721 that gave us the iconic projects that grabbed headlines.
 featuredImage:
   type: ImageBlock
   url: /images/guruguruhyena.svg
