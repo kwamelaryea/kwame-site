@@ -49,7 +49,7 @@ postFeed:
   showAuthor: true
   actions: []
   elementId: null
-  variant: three-col-grid
+  variant: two-col-grid
   colors: bg-light-fg-dark
   hoverEffect: move-up
 ---
