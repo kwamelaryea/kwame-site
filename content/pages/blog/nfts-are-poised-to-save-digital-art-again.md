@@ -6,7 +6,7 @@ author: content/data/person1.json
 excerpt: 'NFT by guruguruhyena - https://guruguruhyena.neocities.org/'
 featuredImage:
   type: ImageBlock
-  url: /images/abstract-feature1.svg
+  url: /images/guruguruhyena.svg
   altText: Thumbnail
   elementId: ''
   styles:
