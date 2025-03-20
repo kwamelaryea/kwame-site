@@ -16,7 +16,7 @@ featuredImage:
   styles:
     self:
       borderRadius: medium
-isFeatured: true
+isFeatured: false
 seo:
   metaTitle: The Top Ten Lessons We’ve Learned Since Our Initial Launch
   metaDescription: You can add the excerpt and main keywords of your blog post here.
