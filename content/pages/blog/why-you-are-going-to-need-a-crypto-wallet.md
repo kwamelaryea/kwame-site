@@ -19,7 +19,11 @@ featuredImage:
 isFeatured: false
 seo:
   metaTitle: The Top Ten Lessons We’ve Learned Since Our Initial Launch
-  metaDescription: You can add the excerpt and main keywords of your blog post here.
+  metaDescription: >-
+    Imagine a world where you can’t trust what you see or hear. That’s not a
+    sci-fi plot—it’s the reality we’re stepping into with the rise of deepfakes.
+    These AI-generated fakes are so convincing that they’re already disrupting
+    lives, and within the next year, this crisis will only deepen.
   socialImage: /images/abstract-feature2.svg
   type: Seo
 colors: bg-light-fg-dark
