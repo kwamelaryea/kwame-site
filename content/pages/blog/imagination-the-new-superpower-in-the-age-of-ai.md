@@ -92,10 +92,6 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
-  addTitleSuffix: false
-  metaTags: []
 colors: bg-light-fg-dark
 styles:
   self:
