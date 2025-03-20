@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: NFTs Are Poised to Save Digital Art Again
-date: '2022-10-10'
+date: '2025-03-10'
 author: content/data/person1.json
 excerpt: >-
   Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
