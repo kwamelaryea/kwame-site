@@ -3,9 +3,7 @@ type: PostLayout
 title: NFTs Are Poised to Save Digital Art Again
 date: '2025-03-20'
 author: content/data/person1.json
-excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+excerpt: 'NFT by guruguruhyena - https://guruguruhyena.neocities.org/'
 featuredImage:
   type: ImageBlock
   url: /images/abstract-feature1.svg
