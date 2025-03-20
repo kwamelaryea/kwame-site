@@ -11,7 +11,7 @@ excerpt: >-
   generic slop. And honestly? They’re not entirely wrong.
 featuredImage:
   type: ImageBlock
-  url: /images/abstract-feature1.svg
+  url: /images/imagination-engine.svg
   altText: imaginEngine-imagination-engine
   elementId: ''
   styles:
