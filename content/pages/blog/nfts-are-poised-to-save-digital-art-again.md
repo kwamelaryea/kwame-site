@@ -7,7 +7,7 @@ excerpt: 'NFT by guruguruhyena - https://guruguruhyena.neocities.org/'
 featuredImage:
   type: ImageBlock
   url: /images/guruguruhyena.svg
-  altText: Thumbnail
+  altText: NFT by guruguruhyena
   elementId: ''
   styles:
     self:
