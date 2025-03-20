@@ -26,7 +26,7 @@ seo:
     sci-fi plot—it’s the reality we’re stepping into with the rise of deepfakes.
     These AI-generated fakes are so convincing that they’re already disrupting
     lives, and within the next year, this crisis will only deepen.
-  socialImage: /images/abstract-feature2.svg
+  socialImage: /images/freepik__adjust__30868.png
   type: Seo
 colors: bg-light-fg-dark
 styles:
