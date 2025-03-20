@@ -34,11 +34,9 @@ bottomSections:
       text: How can we help?
       color: text-dark
     subtitle: Section with a form subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: >
+      Whether you need more information or you would like to get in touch for an
+      initial consultation, feel free to use the form and drop us a message.
     actions: []
     media:
       type: FormBlock
