@@ -33,7 +33,7 @@ bottomSections:
       type: TitleBlock
       text: How can we help?
       color: text-dark
-    subtitle: Section with a form subtitle
+    subtitle: Future-proof your brand
     text: >
       Whether you need more information or you would like to get in touch for an
       initial consultation, feel free to use the form and drop us a message.
