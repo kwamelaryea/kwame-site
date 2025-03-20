@@ -3,7 +3,12 @@ type: PostLayout
 title: NFTs Are Poised to Save Digital Art Again
 date: '2025-03-20'
 author: content/data/person1.json
-excerpt: 'NFT by guruguruhyena - https://guruguruhyena.neocities.org/'
+excerpt: >-
+  In 2017, a quiet revolution unfolded on the Ethereum blockchain. The
+  introduction of ERC-721—an Ethereum Improvement Proposal—ignited a spark that
+  brought Non-Fungible Tokens (NFTs) into the spotlight. While unique digital
+  assets like Rare Pepes and Spells of Genesis had been floating around prior to
+  this, it was ERC-721 that gave us the iconic projects that grabbed headlines: 
 featuredImage:
   type: ImageBlock
   url: /images/guruguruhyena.svg
