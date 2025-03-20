@@ -4,8 +4,11 @@ title: 'Imagination: The New Superpower in the Age of AI'
 date: '2025-03-31'
 author: content/data/person1.json
 excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+  Picture this: a world where creativity flows as freely as a Green Lantern’s
+  light, powered by a ring of limitless possibility. Now, swap that ring for
+  generative AI—a tool that’s been in the wild for just over three years. Yet,
+  despite its potential, skeptics are already dismissing it as a factory for
+  generic slop. And honestly? They’re not entirely wrong.
 featuredImage:
   type: ImageBlock
   url: /images/abstract-feature1.svg
