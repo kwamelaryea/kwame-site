@@ -2,7 +2,7 @@
 type: PageLayout
 title: NFTs Are Poised to Save Digital Art Again
 sections: []
-slug: nfts-are-poised-to-save-digital-art-again
+slug: /blog/nfts-are-poised-to-save-digital-art-again
 isDraft: false
 seo:
   type: Seo
