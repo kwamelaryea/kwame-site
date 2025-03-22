@@ -262,6 +262,8 @@ sections:
           textAlign: center
     posts:
       - content/pages/blog/why-you-are-going-to-need-a-crypto-wallet.md
+      - content/pages/blog/nfts-are-poised-to-save-digital-art-again.md
+      - content/pages/blog/imagination-the-new-superpower-in-the-age-of-ai.md
     showThumbnail: true
     showExcerpt: true
     showDate: true
