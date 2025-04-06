@@ -62,6 +62,7 @@ seo:
     transformed into the dreamy, hand-drawn style of Studio Ghibli animations.
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/Heavy Metal Band Image.jpg
 colors: bg-light-fg-dark
 styles:
   self:
