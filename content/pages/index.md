@@ -538,7 +538,7 @@ sections:
     type: GenericSection
     elementId: contact
 seo:
-  metaTitle: Home - imaginEngine AI and Web3 Consults
+  metaTitle: Home - imaginEngine AI and Web3 Consultants
   metaDescription: >-
     Our approach is simple: the limits are no longer defined by what you can
     build but by how effectively you capture global imagination and cultural
