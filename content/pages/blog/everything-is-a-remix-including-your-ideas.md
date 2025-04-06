@@ -12,7 +12,7 @@ excerpt: >-
   drown in.
 featuredImage:
   type: ImageBlock
-  url: /images/abstract-feature1.svg
+  url: /images/Everything is a Remix.svg
   altText: Thumbnail
   elementId: ''
   styles:
