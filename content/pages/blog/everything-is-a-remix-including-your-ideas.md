@@ -56,7 +56,10 @@ isDraft: false
 seo:
   type: Seo
   metaTitle: Everything Is a Remix—Including Your Ideas
-  metaDescription: lorem-ipsum
+  metaDescription: >-
+    With the recent release of ChatGPT-4o and its new image generation engine,
+    the internet lit up with a wave of “Ghiblification”—everyday photos
+    transformed into the dreamy, hand-drawn style of Studio Ghibli animations.
   addTitleSuffix: false
   metaTags: []
 colors: bg-light-fg-dark
