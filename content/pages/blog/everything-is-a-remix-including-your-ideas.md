@@ -74,7 +74,7 @@ styles:
 ---
 With the recent release of ChatGPT-4o and its new image generation engine, the internet lit up with a wave of “Ghiblification”—everyday photos transformed into the dreamy, hand-drawn style of Studio Ghibli animations. But just as quickly as this trend took off, the backlash rolled in. Amid concerns about copyright infringement and the flood of “AI slop” we’re supposedly doomed to drown in, one critique kept popping up:
 
-***“AI can only copy what’s already been done; it can’t create anything original.” ***** **
+\*\*\*“AI can only copy what’s already been done; it can’t create anything original.” \*\*\*\*\* \*\*
 
 As a creative myself, I get the instinct to defend the uniqueness of human imagination. I’ve worn many hats over the years—starting as a fine artist, studying Three-Dimensional Design (think physical product design), pivoting to graphic and web design, and now working in product management. But along this journey, I’ve had moments of clarity that shifted my perspective: *most of my “original” ideas are really mashups of everything I’ve soaked up along the way.*  
 
@@ -82,10 +82,9 @@ As a creative myself, I get the instinct to defend the uniqueness of human imagi
 
 Growing up, I was steeped in late ‘90s hip-hop—a front-row seat to the art of sampling and remixing. My obsession with sci-fi and mecha anime gave me a love for bold colour palettes and futuristic visual vibes. Watching *Yo! MTV Raps* as a teen and diving into west coast hip-hop sparked my appreciation for rhythm, graffiti, and street art. When I sit down to create, I’m pulling from this rich pool of influences, filtering it through my own lens to craft something “new.”  
 
+![](/images/Heavy%20Metal%20Band%20Image.jpg)
+
 In truth: that’s exactly how large language models (LLMs) and AI tools operate. The difference? Their lens is the prompt ***you*** provide. For example, imagine I tell an AI: “Generate an image of a heavy metal band decked out in black leather and face paint, rocking out in a field of daisies under a bright blue sky with fluffy clouds, rendered like 3D characters on a video game start screen.” That’s a relatively absurd combo you wouldn’t typically see—and it’s the kind of unexpected fusion that drives creativity, whether it’s human or AI-powered.  
-
-
-
 
 **“Bad artists copy. Good artists steal.”― Pablo Picasso**
 
@@ -99,11 +98,4 @@ I’d argue it’s not about the tech—it’s about us. LLMs are the world’s 
 
 AI can churn out derivative mush if we let it, but it can also be a playground for bold, boundary-pushing ideas—if we bring the spark. The more diverse and imaginative our inputs, the more “original” the output. Just like my own creative process, AI thrives on the remix. It’s not about replacing human ingenuity; it’s about amplifying it.  
 
-
-
-
 What do you think? Is AI doomed to be a copycat, or can it be a new frontier for creative remixing? Get in touch with us—I’d love to hear where you stand.  
-
-
-
-
