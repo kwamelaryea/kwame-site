@@ -64,10 +64,38 @@ styles:
   self:
     flexDirection: col
 ---
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis.
+With the recent release of ChatGPT-4o and its new image generation engine, the internet lit up with a wave of “Ghiblification”—everyday photos transformed into the dreamy, hand-drawn style of Studio Ghibli animations. But just as quickly as this trend took off, the backlash rolled in. Amid concerns about copyright infringement and the flood of “AI slop” we’re supposedly doomed to drown in, one critique kept popping up:
 
-> Vestibulum ullamcorper risus auctor eleifend consequat.
+***“AI can only copy what’s already been done; it can’t create anything original.” ***** **
 
-In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+As a creative myself, I get the instinct to defend the uniqueness of human imagination. I’ve worn many hats over the years—starting as a fine artist, studying Three-Dimensional Design (think physical product design), pivoting to graphic and web design, and now working in product management. But along this journey, I’ve had moments of clarity that shifted my perspective: *most of my “original” ideas are really mashups of everything I’ve soaked up along the way.*  
 
-Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+## Sampling and Remix Culture
+
+Growing up, I was steeped in late ‘90s hip-hop—a front-row seat to the art of sampling and remixing. My obsession with sci-fi and mecha anime gave me a love for bold colour palettes and futuristic visual vibes. Watching *Yo! MTV Raps* as a teen and diving into west coast hip-hop sparked my appreciation for rhythm, graffiti, and street art. When I sit down to create, I’m pulling from this rich pool of influences, filtering it through my own lens to craft something “new.”  
+
+In truth: that’s exactly how large language models (LLMs) and AI tools operate. The difference? Their lens is the prompt ***you*** provide. For example, imagine I tell an AI: “Generate an image of a heavy metal band decked out in black leather and face paint, rocking out in a field of daisies under a bright blue sky with fluffy clouds, rendered like 3D characters on a video game start screen.” That’s a relatively absurd combo you wouldn’t typically see—and it’s the kind of unexpected fusion that drives creativity, whether it’s human or AI-powered.  
+
+
+
+
+**“Bad artists copy. Good artists steal.”― Pablo Picasso**
+
+If this feels like a stretch, consider this: the very title of this post isn’t original. It’s borrowed from Kirby Ferguson’s brilliant documentary *Everything Is a Remix*, which dives deep into how art, music, and movies—from Picasso to hip-hop to *Star Wars*—are built on the shoulders of what came before. Creativity isn’t about inventing from scratch; it’s about remixing the raw materials around us in ways that feel fresh.  
+
+## So why does AI get such a bad rap?
+
+I’d argue it’s not about the tech—it’s about us. LLMs are the world’s most powerful content-remixing machines, but they’re still just tools. The real issue is imagination—or the lack of it. We’re living in an age where most people are content to scroll and consume rather than create. On social media, it’s endless absorption; in Hollywood, it’s reboot after remake after recycled IP. When a handful of outliers spark a truly creative idea, it goes viral, and the masses clone it—cue the “slop.” AI isn’t the culprit here; it’s amplifying a broader cultural slump where imagination is on life support.  
+
+## The fix? It’s on us.
+
+AI can churn out derivative mush if we let it, but it can also be a playground for bold, boundary-pushing ideas—if we bring the spark. The more diverse and imaginative our inputs, the more “original” the output. Just like my own creative process, AI thrives on the remix. It’s not about replacing human ingenuity; it’s about amplifying it.  
+
+
+
+
+What do you think? Is AI doomed to be a copycat, or can it be a new frontier for creative remixing? Get in touch with us—I’d love to hear where you stand.  
+
+
+
+
