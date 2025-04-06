@@ -538,7 +538,7 @@ sections:
     type: GenericSection
     elementId: contact
 seo:
-  metaTitle: Home - Demo site
+  metaTitle: Home - imaginEngine AI and Web3 Consults
   metaDescription: This demo site is built with Netlify Create.
   socialImage: /images/main-hero.jpg
   type: Seo
