@@ -1,16 +1,16 @@
 {
     "logo": {
-        "url": "/images/logo-white.svg",
+        "url": "/images/imaginengine-logo-w-132-wht.svg",
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "A description of your brand",
+    "text": "Unleashing Imagination: Your Innovation Agency for the AI Era\n",
     "primaryLinks": {
-        "title": "Product",
+        "title": "pages",
         "links": [
             {
-                "label": "Features",
-                "altText": "Features page",
+                "label": "Home",
+                "altText": "Home page",
                 "url": "/",
                 "icon": "arrowRight",
                 "iconPosition": "right",
@@ -18,45 +18,40 @@
                 "type": "Link"
             },
             {
-                "label": "Pricing",
-                "url": "/pricing",
+                "label": "How We Think",
+                "url": "/articles",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Link",
+                "altText": "Articles page"
             },
             {
-                "label": "Documentation",
+                "label": "Portfolio",
                 "url": "/",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Link",
+                "altText": "Portfolio page"
+            },
+            {
+                "type": "Link",
+                "label": "Podcasts",
+                "altText": "Podcasts page",
+                "url": "/podcasts",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "elementId": ""
             }
         ],
         "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
         "title": "Company",
-        "links": [
-            {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
+        "links": [],
         "type": "FooterLinksGroup"
     },
     "socialLinks": [
