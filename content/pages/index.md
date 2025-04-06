@@ -32,7 +32,7 @@ sections:
     media:
       type: ImageBlock
       url: /images/imaginengine hero image.svg
-      altText: Astronaut Hero Image
+      altText: AI Influencer and Model Hero Image
       elementId: ''
       styles:
         self:
