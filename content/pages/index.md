@@ -539,7 +539,12 @@ sections:
     elementId: contact
 seo:
   metaTitle: Home - imaginEngine AI and Web3 Consults
-  metaDescription: This demo site is built with Netlify Create.
+  metaDescription: >-
+    Our approach is simple: the limits are no longer defined by what you can
+    build but by how effectively you capture global imagination and cultural
+    trends. As your trusted R&D lab, we stay at the forefront of emerging
+    technologies, experimenting with cutting-edge solutions to ensure your brand
+    leads the way.
   socialImage: /images/main-hero.jpg
   type: Seo
 type: PageLayout
