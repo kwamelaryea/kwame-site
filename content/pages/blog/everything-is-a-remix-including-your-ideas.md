@@ -7,7 +7,9 @@ excerpt: >-
   With the recent release of ChatGPT-4o and its new image generation engine, the
   internet lit up with a wave of “Ghiblification”—everyday photos transformed
   into the dreamy, hand-drawn style of Studio Ghibli animations. But just as
-  quickly as this trend took off, the backlash rolled in. 
+  quickly as this trend took off, the backlash rolled in. Amid concerns about
+  copyright infringement and the flood of “AI slop” we’re supposedly doomed to
+  drown in.
 featuredImage:
   type: ImageBlock
   url: /images/abstract-feature1.svg
