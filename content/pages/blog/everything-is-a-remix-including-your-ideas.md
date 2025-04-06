@@ -4,8 +4,9 @@ title: Everything Is a Remix—Including Your Ideas
 date: '2025-04-06'
 author: content/data/person1.json
 excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+  With the recent release of ChatGPT-4o and its new image generation engine, the
+  internet lit up with a wave of “Ghiblification”—everyday photos transformed
+  into the dreamy, hand-drawn style of Studio Ghibli animations.
 featuredImage:
   type: ImageBlock
   url: /images/abstract-feature1.svg
