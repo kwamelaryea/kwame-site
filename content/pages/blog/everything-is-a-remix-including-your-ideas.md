@@ -13,7 +13,7 @@ excerpt: >-
 featuredImage:
   type: ImageBlock
   url: /images/Everything is a Remix.svg
-  altText: Thumbnail
+  altText: Everything is a Remix including you ideas
   elementId: ''
   styles:
     self:
