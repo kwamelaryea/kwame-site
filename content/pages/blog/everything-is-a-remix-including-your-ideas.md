@@ -55,7 +55,7 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
+  metaTitle: Everything Is a Remix—Including Your Ideas
   metaDescription: lorem-ipsum
   addTitleSuffix: false
   metaTags: []
