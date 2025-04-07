@@ -16,9 +16,9 @@ sections:
 
       Our approach is simple: the limits are no longer defined by what you can
       build but by how effectively you capture global imagination and cultural
-      trends. As your trusted R\&D lab, we stay at the forefront of emerging
-      technologies, experimenting with cutting-edge solutions to ensure your
-      brand leads the way.
+      trends. As your trusted research consultants, we stay at the forefront of
+      emerging technologies, experimenting with cutting-edge solutions to help
+      ensure your brand leads the way.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
