@@ -545,7 +545,7 @@ seo:
     trends. As your trusted research consultants, we stay at the forefront of
     emerging technologies, experimenting with cutting-edge solutions to ensure
     your brand leads the way.
-  socialImage: /images/main-hero.jpg
+  socialImage: /images/imaginengine hero image.svg
   type: Seo
 type: PageLayout
 ---
