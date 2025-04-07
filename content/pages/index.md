@@ -547,5 +547,7 @@ seo:
     your brand leads the way.
   socialImage: /images/imaginengine hero image.svg
   type: Seo
+  metaTags:
+    - type: MetaTag
 type: PageLayout
 ---
