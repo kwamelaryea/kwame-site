@@ -9,16 +9,16 @@ sections:
       type: TitleBlock
     subtitle: Empowering Brands to Adapt to the  Future of Technology
     text: >
-      Welcome to the new age of imagination, where innovation knows no bounds.
+      Welcome to the ***age of imagination***, where innovation knows no bounds.
       At imaginEngine, we specialize in helping forward-thinking brands thrive
       in this AI-driven and blockchain-ready landscape.
 
 
       Our approach is simple: the limits are no longer defined by what you can
-      build but by how effectively you capture global imagination and cultural
-      trends. As your trusted research consultants, we stay at the forefront of
-      emerging technologies, experimenting with cutting-edge solutions to help
-      ensure your brand leads the way.
+      build but by how you can capture global imagination and cultural trends.
+      As your trusted research consultants, we stay at the forefront of emerging
+      technologies, experimenting with cutting-edge solutions to help ensure
+      your brand leads the way.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
