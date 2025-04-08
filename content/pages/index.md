@@ -4,7 +4,7 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Driving Innovation in the AI and Blockchain Era
+      text: Driving Innovation in the AI and Web3 Era
       color: text-dark
       type: TitleBlock
     subtitle: Empowering Leading Brands to Shape the Future of Technology
