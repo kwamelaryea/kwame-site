@@ -7,7 +7,7 @@ sections:
       text: Driving Innovation in the AI and Web3 Era
       color: text-dark
       type: TitleBlock
-    subtitle: Empowering Leading Brands to Shape the Future of Technology
+    subtitle: Empowering Brands to Adapt to the  Future of Technology
     text: >
       Welcome to the new age of imagination, where innovation knows no bounds.
       At imaginEngine, we specialize in helping forward-thinking brands thrive
