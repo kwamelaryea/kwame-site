@@ -27,15 +27,6 @@
                 "altText": "Articles page"
             },
             {
-                "label": "Portfolio",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link",
-                "altText": "Portfolio page"
-            },
-            {
                 "type": "Link",
                 "label": "Podcasts",
                 "altText": "Podcasts page",
