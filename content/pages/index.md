@@ -9,18 +9,18 @@ sections:
       type: TitleBlock
     subtitle: Crafting Games That Echo Beyond the Screen
     text: >
-      Picture a game that doesn’t just entertain—it stirs something deep inside.
-      We’re here to help you create that. Drawing from years of playing,
+      We envision games that don't just entertain—but stirs something deep
+      inside. We’re here to help you create that. Drawing from years of playing,
       dreaming, and building in the gaming world, we’ve learned one thing: the
       best games feel like they’re alive. They pull people in, spark connection,
       and linger in the mind long after the controller’s down.
 
 
-      We don’t chase trends or pile on gimmicks. Instead, we dig for the
-      spark—the one thing that makes your game yours—and fan it into something
-      unforgettable. Crypto and Web3? They’re tools we wield to open new doors,
-      to let players step into worlds where they truly belong. Our mission is to
-      strip away the noise and let the heart of your game shine through.
+      We don’t chase trends or gimmicks. Instead, we dig for the spark—the one
+      thing that makes your game yours—and fan it into something unforgettable.
+      Crypto and Web3? These are tools we wield to create new player
+      experiences. Our mission is to strip away the noise and let the heart of
+      your game shine through.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
