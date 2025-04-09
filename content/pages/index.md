@@ -290,10 +290,6 @@ sections:
         url: /images/empathy-logo.svg
         altText: Empathy logo
         elementId: ''
-      - type: ImageBlock
-        url: /images/wellster-logo.svg
-        altText: Wellster logo
-        elementId: ''
     elementId: ''
     motion: static
     colors: bg-light-fg-dark
