@@ -288,7 +288,7 @@ sections:
     images:
       - type: ImageBlock
         url: /images/Football365 Logo.svg
-        altText: Empathy logo
+        altText: Football 365 logo
         elementId: ''
       - type: ImageBlock
         url: /images/Sbat Logo.svg
