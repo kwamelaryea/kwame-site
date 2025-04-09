@@ -14,8 +14,8 @@
     "primaryLinks": [
         {
             "label": "How We Think",
-            "altText": "Articles",
-            "url": "/articles",
+            "altText": "How We Think - Our Blog",
+            "url": "/blog",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
@@ -23,7 +23,7 @@
         },
         {
             "label": "Podcast",
-            "altText": "Podcast Page",
+            "altText": "imaginEngine Podcasts Page",
             "url": "/podcast",
             "icon": "arrowRight",
             "iconPosition": "right",
