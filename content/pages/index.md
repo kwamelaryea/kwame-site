@@ -7,7 +7,7 @@ sections:
       text: Find the Heartbeat of Your Game
       color: text-dark
       type: TitleBlock
-    subtitle: Empowering Brands to Adapt to the  Future of Technology
+    subtitle: Crafting Games That Echo Beyond the Screen
     text: >
       Welcome to the ***age of imagination***, where innovation knows no bounds.
       At imaginEngine, we specialize in helping forward-thinking brands thrive
