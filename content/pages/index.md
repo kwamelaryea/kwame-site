@@ -186,13 +186,6 @@ sections:
 
       This version leans into storytelling and passion, keeping it grounded yet
       uplifting, with just enough of that visionary edge.
-    badge:
-      label: Key Benefits
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
     colors: bg-light-fg-dark
     styles:
       self:
