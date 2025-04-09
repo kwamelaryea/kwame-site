@@ -9,16 +9,18 @@ sections:
       type: TitleBlock
     subtitle: Crafting Games That Echo Beyond the Screen
     text: >
-      Welcome to the ***age of imagination***, where innovation knows no bounds.
-      At imaginEngine, we specialize in helping forward-thinking brands thrive
-      in this AI-driven and blockchain-ready landscape.
+      Picture a game that doesn’t just entertain—it stirs something deep inside.
+      We’re here to help you create that. Drawing from years of playing,
+      dreaming, and building in the gaming world, we’ve learned one thing: the
+      best games feel like they’re alive. They pull people in, spark connection,
+      and linger in the mind long after the controller’s down.
 
 
-      Our approach is simple: the limits are no longer defined by what you can
-      build but by how you can capture global imagination and cultural trends.
-      As your trusted research consultants, we stay at the forefront of emerging
-      technologies, experimenting with cutting-edge solutions to help ensure
-      your brand leads the way.
+      We don’t chase trends or pile on gimmicks. Instead, we dig for the
+      spark—the one thing that makes your game yours—and fan it into something
+      unforgettable. Crypto and Web3? They’re tools we wield to open new doors,
+      to let players step into worlds where they truly belong. Our mission is to
+      strip away the noise and let the heart of your game shine through.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
