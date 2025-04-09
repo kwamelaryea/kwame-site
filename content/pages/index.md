@@ -119,9 +119,8 @@ sections:
       - title: Play That Stays With You
         subtitle: ''
         text: >
-          There is now a world of decentralised storage, compute, video hosting,
-          and social platforms. Each with their own cultures, communities and
-          benefits. We can help you navigate.
+          We design with soul, crafting moments that hit like a perfect song.
+          Intuitive, immersive, and true to what players crave.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
