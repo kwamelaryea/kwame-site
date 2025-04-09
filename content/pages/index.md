@@ -296,7 +296,7 @@ sections:
         elementId: ''
       - type: ImageBlock
         url: /images/Catenamedia Logo.svg
-        altText: Vise logo
+        altText: Catenamedia logo
         elementId: ''
       - type: ImageBlock
         url: /images/777nl Logo.svg
