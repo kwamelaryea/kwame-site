@@ -284,7 +284,7 @@ sections:
           - pr-7
     type: DividerSection
   - type: ImageGallerySection
-    subtitle: Our customers
+    subtitle: Our History
     images:
       - type: ImageBlock
         url: /images/Football365 Logo (1).svg
