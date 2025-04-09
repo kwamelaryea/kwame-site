@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: imaginEngine Sessions
+title: Podcast - imaginEngine Sessions
 sections:
   - type: GenericSection
     title:
