@@ -65,15 +65,10 @@ sections:
       - type: FeaturedItem
         title: Worlds That Breathe
         subtitle: Creativity Unleashed
-        text: >+
-          AI is being talked about everywhere but current most use cases are
-          barely scratching the surface of what is possible, we are well placed
-          to help you leverage the right models with your data or help you
-          unleash agents.
-
-
-
-
+        text: >
+          We use blockchain like a brush, painting possibilities where players
+          don’t just play—they own a piece of the story. It’s about belonging,
+          not buzzwords.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
