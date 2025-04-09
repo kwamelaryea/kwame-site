@@ -383,7 +383,7 @@ sections:
     type: GenericSection
     elementId: contact
 seo:
-  metaTitle: Home - Kwa.me Creative Direction Game Consultants
+  metaTitle: Home - Kwa.me - Creative Direction for Web3 Games
   metaDescription: >-
     Our approach is simple: the limits are no longer defined by what you can
     build but by how effectively you capture global imagination and cultural
