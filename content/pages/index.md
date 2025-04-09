@@ -163,7 +163,7 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: Be Ahead of The Curve
+      text: Our Vision
       color: text-dark
       styles:
         self:
