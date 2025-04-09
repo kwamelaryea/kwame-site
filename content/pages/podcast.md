@@ -180,8 +180,10 @@ slug: /podcast
 isDraft: false
 seo:
   type: Seo
-  metaTitle: Landing Page
-  metaDescription: Write here your new page's description including most relevant keywords.
+  metaTitle: Kwame - imaginEngine Sessions Podcast Page
+  metaDescription: >-
+    Conversations about Web3, AI, Robotics developments and the future. How do
+    you leverage these new tools. 
   addTitleSuffix: true
   socialImage: /images/main-hero.jpg
   metaTags: []
