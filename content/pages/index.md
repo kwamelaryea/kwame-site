@@ -52,7 +52,7 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Areas of Expertise
+      text: Creative Direction
       color: text-dark
       styles:
         self:
