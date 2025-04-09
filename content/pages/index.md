@@ -4,7 +4,7 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Driving Innovation in the AI and Web3 Era
+      text: Find the Heartbeat of Your Game
       color: text-dark
       type: TitleBlock
     subtitle: Empowering Brands to Adapt to the  Future of Technology
