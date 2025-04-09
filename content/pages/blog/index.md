@@ -33,7 +33,7 @@ styles:
 seo:
   metaTitle: Kwame - Blog - How We Think
   metaDescription: A selection of articles breaking down our theories
-  socialImage: /images/img-placeholder.svg
+  socialImage: /images/Leonardo_Phoenix_10_A_breathtakingly_vivid_and_cinematic_photo_1.jpg
   type: Seo
 type: PostFeedLayout
 bottomSections: []
