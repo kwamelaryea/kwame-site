@@ -300,7 +300,7 @@ sections:
         elementId: ''
       - type: ImageBlock
         url: /images/777nl Logo.svg
-        altText: Telus logo
+        altText: 777.nl logo
         elementId: ''
       - type: ImageBlock
         url: /images/Evolution Logo.svg
