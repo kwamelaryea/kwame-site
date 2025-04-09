@@ -390,7 +390,7 @@ seo:
     and building in the gaming world, we’ve learned one thing: the best games
     feel like they’re alive. They pull people in, spark connection, and linger
     in the mind long after the controller’s down.
-  socialImage: /images/imaginengine hero image.svg
+  socialImage: /images/Kwame Homepage Share Image.png
   type: Seo
   metaTags:
     - type: MetaTag
