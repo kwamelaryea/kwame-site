@@ -48,7 +48,7 @@
             "url": "/#contact",
             "icon": "arrowRight",
             "iconPosition": "right",
-            "style": "primary",
+            "style": "secondary",
             "type": "Button",
             "altText": "Book a Consultation With Us"
         }
