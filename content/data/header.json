@@ -48,12 +48,12 @@
             "url": "/#contact",
             "icon": "arrowRight",
             "iconPosition": "right",
-            "style": "primary",
+            "style": "secondary",
             "type": "Button",
             "altText": "Book a Consultation With Us"
         }
     ],
-    "variant": "logo-left-primary-nav-centered",
+    "variant": "logo-centered-primary-nav-left",
     "colors": "bg-light-fg-dark",
     "type": "Header",
     "title": ""
