@@ -93,7 +93,10 @@ sections:
               borderRadius: x-large
       - title: Rewards That Feel Real
         subtitle: ''
-        text: "Many misunderstand the benefits of Blockchains and their immutable records, the cryptocurrencies they birthed are misunderstood even less and then you have NFTs which have been confused for jpegs.\_\n\n\n\n\n"
+        text: >
+          Smart contracts become a way to surprise and delight—think living
+          economies where every choice a player makes ripples through the game.
+          It’s magic, not math.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
