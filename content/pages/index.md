@@ -385,11 +385,11 @@ sections:
 seo:
   metaTitle: Home - Kwa.me - Creative Direction for Web3 Games
   metaDescription: >-
-    Our approach is simple: the limits are no longer defined by what you can
-    build but by how effectively you capture global imagination and cultural
-    trends. As your trusted research consultants, we stay at the forefront of
-    emerging technologies, experimenting with cutting-edge solutions to ensure
-    your brand leads the way.
+    We envision games that don't just entertain—but stirs something deep inside.
+    We’re here to help you create that. Drawing from years of playing, dreaming,
+    and building in the gaming world, we’ve learned one thing: the best games
+    feel like they’re alive. They pull people in, spark connection, and linger
+    in the mind long after the controller’s down.
   socialImage: /images/imaginengine hero image.svg
   type: Seo
   metaTags:
