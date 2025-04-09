@@ -1,20 +1,20 @@
 ---
-title: Blog
+title: How We Think
 slug: /blog
-numOfPostsPerPage: 8
+numOfPostsPerPage: 4
 enableSearch: true
 topSections:
   - title:
-      text: Featured Post
+      text: 'How We Think '
       color: text-dark
       type: TitleBlock
-    subtitle: This is the subtitle
+    subtitle: A selection of articles breaking down our theories
     posts:
-      - content/pages/blog/top-ten-lessons-we-learned.md
+      - content/pages/blog/imagination-the-new-superpower-in-the-age-of-ai.md
     showThumbnail: true
     showExcerpt: true
     showDate: true
-    showAuthor: true
+    showAuthor: false
     variant: big-list
     colors: bg-light-fg-dark
     styles:
@@ -31,11 +31,9 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Blog - Demo site
-  metaDescription: >-
-    This is the blog of the demo site where we post about technology, product,
-    and design.
-  socialImage: /images/img-placeholder.svg
+  metaTitle: Kwame - Blog - How We Think
+  metaDescription: A selection of articles breaking down our theories
+  socialImage: /images/Leonardo_Phoenix_10_A_breathtakingly_vivid_and_cinematic_photo_1.jpg
   type: Seo
 type: PostFeedLayout
 bottomSections: []
@@ -49,7 +47,7 @@ postFeed:
   showAuthor: true
   actions: []
   elementId: null
-  variant: three-col-grid
+  variant: two-col-grid
   colors: bg-light-fg-dark
   hoverEffect: move-up
 ---
