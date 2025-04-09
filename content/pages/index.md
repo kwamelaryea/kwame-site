@@ -304,7 +304,7 @@ sections:
         elementId: ''
       - type: ImageBlock
         url: /images/Evolution Logo.svg
-        altText: Contentful logo
+        altText: Evolution logo
         elementId: ''
     elementId: ''
     motion: static
