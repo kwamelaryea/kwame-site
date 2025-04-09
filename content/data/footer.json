@@ -27,15 +27,6 @@
                 "altText": "Articles page"
             },
             {
-                "label": "Portfolio",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link",
-                "altText": "Portfolio page"
-            },
-            {
                 "type": "Link",
                 "label": "Podcasts",
                 "altText": "Podcasts page",
@@ -56,50 +47,27 @@
     },
     "socialLinks": [
         {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
-            "type": "Social"
-        },
-        {
             "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
+            "url": "https://x.com/kwa_me",
             "icon": "twitter",
             "type": "Social"
         },
         {
             "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
+            "url": "https://www.linkedin.com/in/kwame-laryea-4913aa56",
             "icon": "linkedin",
             "type": "Social"
         },
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "/#contact",
             "icon": "mail",
             "type": "Social"
         }
     ],
-    "legalLinks": [
-        {
-            "label": "Terms",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Privacy",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        }
-    ],
+    "legalLinks": [],
     "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
     "colors": "bg-dark-fg-light",
     "type": "Footer",
-    "title": "imaginEngine: Innovation Consultants"
+    "title": ""
 }

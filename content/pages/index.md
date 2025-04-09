@@ -4,21 +4,23 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Driving Innovation in the AI and Blockchain Era
+      text: Find the Heartbeat of Your Game
       color: text-dark
       type: TitleBlock
-    subtitle: Empowering Leading Brands to Shape the Future of Technology
+    subtitle: Crafting Games That Echo Beyond the Screen
     text: >
-      Welcome to the new age of imagination, where innovation knows no bounds.
-      At imaginEngine, we specialize in helping forward-thinking brands thrive
-      in this AI-driven and blockchain-ready landscape.
+      We envision games that don't just entertain—but stirs something deep
+      inside. We’re here to help you create that. Drawing from years of playing,
+      dreaming, and building in the gaming world, we’ve learned one thing: the
+      best games feel like they’re alive. They pull people in, spark connection,
+      and linger in the mind long after the controller’s down.
 
 
-      Our approach is simple: the limits are no longer defined by what you can
-      build but by how effectively you capture global imagination and cultural
-      trends. As your trusted R\&D lab, we stay at the forefront of emerging
-      technologies, experimenting with cutting-edge solutions to ensure your
-      brand leads the way.
+      We don’t chase trends or gimmicks. Instead, we dig for the spark—the one
+      thing that makes your game yours—and fan it into something unforgettable.
+      Crypto and Web3? These are tools we wield to create new player
+      experiences. Our mission is to strip away the noise and let the heart of
+      your game shine through.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
@@ -31,16 +33,12 @@ sections:
         type: Button
     media:
       type: ImageBlock
-      url: /images/imaginengine hero image.svg
+      url: /images/Kwame 3D Game Character.svg
       altText: AI Influencer and Model Hero Image
       elementId: ''
       styles:
         self:
           borderRadius: medium
-    badge:
-      label: Thesis
-      color: text-primary
-      type: Badge
     elementId: ''
     colors: bg-light-fg-dark
     styles:
@@ -54,26 +52,23 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Areas of Expertise
+      text: Creative Direction
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Exploring technologies before adoption
+    subtitle: >-
+      Here’s what we bring to the table, less as tech specs and more as
+      promises:
     items:
       - type: FeaturedItem
-        title: Generative AI and Agents
-        subtitle: Creativity Unleashed
-        text: >+
-          AI is being talked about everywhere but current most use cases are
-          barely scratching the surface of what is possible, we are well placed
-          to help you leverage the right models with your data or help you
-          unleash agents.
-
-
-
-
+        title: Worlds That Breathe
+        subtitle: ''
+        text: >
+          We use blockchain like a brush, painting possibilities where players
+          don’t just play—they own a piece of the story. It’s about belonging,
+          not buzzwords.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -96,9 +91,12 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: Blockchains and Crypto
-        subtitle: Immutable Records
-        text: "Many misunderstand the benefits of Blockchains and their immutable records, the cryptocurrencies they birthed are misunderstood even less and then you have NFTs which have been confused for jpegs.\_\n\n\n\n\n"
+      - title: Rewards That Feel Real
+        subtitle: ''
+        text: >
+          Smart contracts become a way to surprise and delight—think living
+          economies where every choice a player makes ripples through the game.
+          It’s magic, not math.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -118,12 +116,11 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: "Web3\_ Products"
-        subtitle: Democratised Access
+      - title: Play That Stays With You
+        subtitle: ''
         text: >
-          There is now a world of decentralised storage, compute, video hosting,
-          and social platforms. Each with their own cultures, communities and
-          benefits. We can help you navigate.
+          We design with soul, crafting moments that hit like a perfect song.
+          Intuitive, immersive, and true to what players crave.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -152,13 +149,6 @@ sections:
         style: primary
         elementId: ''
         type: Button
-    badge:
-      label: Research areas
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
     elementId: ''
     variant: three-col-grid
     colors: bg-neutral-fg-dark
@@ -173,7 +163,7 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: Be Ahead of The Curve
+      text: Our Vision
       color: text-dark
       styles:
         self:
@@ -181,17 +171,21 @@ sections:
       type: TitleBlock
     subtitle: ''
     text: >
-      Whether it’s leveraging blockchain for secure and scalable systems or
-      embracing AI-powered creativity, we propose, evaluate, build, and deploy
-      visionary strategies tailored to your goals. Let us help you unlock new
-      possibilities and redefine what’s possible.
-    badge:
-      label: Key Benefits
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
+      In a sea of noise, we’re the quiet voice whispering, “What’s the soul of
+      your game?” Forget the hype. We’re not here to stack tech for the sake of
+      it—we’re here to build experiences that stick with people. With a decade
+      of gaming in our bones, we blend instinct and imagination to turn your
+      ideas into something timeless.
+
+
+      Crypto and Web3 are just the beginning—a way to dream bigger, connect
+      deeper, and make games that feel like home. We’re not consultants; we’re
+      collaborators, here to uncover what’s real and amplify it. Let’s create
+      something that moves the world, one player at a time.
+
+
+      This version leans into storytelling and passion, keeping it grounded yet
+      uplifting, with just enough of that visionary edge.
     colors: bg-light-fg-dark
     styles:
       self:
@@ -208,8 +202,10 @@ sections:
       styles:
         self:
           textAlign: left
-    subtitle: Where we battle test our ideas
-    text: ''
+    subtitle: ''
+    text: >
+      imaginEngine sessions is our podcast series where we discuss new
+      developments and our analysis of where we think things are headed. 
     actions: []
     media:
       type: VideoBlock
@@ -287,195 +283,44 @@ sections:
           - pb-7
           - pr-7
     type: DividerSection
-  - type: CarouselSection
-    title: null
-    subtitle: What our customers say about us
-    items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to
-          accomplish a particular purpose."
-        tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: John Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just
-          make a product aesthetically pleasing, it makes it a pleasure to use."
-        tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple,
-          that's why it is so complicated."
-        tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using
-          Netlify Create.”
-        tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/img-placeholder-dark.png
-          altText: Jane Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-dark-fg-light
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-    elementId: null
-    variant: next-prev-nav
+  - type: ImageGallerySection
+    subtitle: Our customers
+    images:
+      - type: ImageBlock
+        url: /images/Football365 Logo (1).svg
+        altText: Football 365 logo
+        elementId: ''
+      - type: ImageBlock
+        url: /images/Sbat Logo.svg
+        altText: SBAT logo
+        elementId: ''
+      - type: ImageBlock
+        url: /images/Catenamedia Logo.svg
+        altText: Catenamedia logo
+        elementId: ''
+      - type: ImageBlock
+        url: /images/777nl Logo.svg
+        altText: 777.nl logo
+        elementId: ''
+      - type: ImageBlock
+        url: /images/Evolution Logo.svg
+        altText: Evolution logo
+        elementId: ''
+    elementId: ''
+    motion: static
     colors: bg-light-fg-dark
     styles:
       self:
+        margin:
+          - mt-0
+          - ml-0
+          - mb-0
+          - mr-0
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
         justifyContent: center
       subtitle:
         textAlign: center
@@ -483,7 +328,7 @@ sections:
       text: Get In Touch
       color: text-dark
       type: TitleBlock
-    subtitle: Future-Proof Your Brand
+    subtitle: ''
     text: >
       Whether you need more information or you would like to get in touch for an
       initial consultation, feel free to use the form and drop us a message.
@@ -538,14 +383,16 @@ sections:
     type: GenericSection
     elementId: contact
 seo:
-  metaTitle: Home - imaginEngine AI and Web3 Consultants
+  metaTitle: Home - Kwa.me - Creative Direction for Web3 Games
   metaDescription: >-
-    Our approach is simple: the limits are no longer defined by what you can
-    build but by how effectively you capture global imagination and cultural
-    trends. As your trusted R&D lab, we stay at the forefront of emerging
-    technologies, experimenting with cutting-edge solutions to ensure your brand
-    leads the way.
-  socialImage: /images/main-hero.jpg
+    We envision games that don't just entertain—but stirs something deep inside.
+    We’re here to help you create that. Drawing from years of playing, dreaming,
+    and building in the gaming world, we’ve learned one thing: the best games
+    feel like they’re alive. They pull people in, spark connection, and linger
+    in the mind long after the controller’s down.
+  socialImage: /images/Kwame Homepage Share Image.png
   type: Seo
+  metaTags:
+    - type: MetaTag
 type: PageLayout
 ---
