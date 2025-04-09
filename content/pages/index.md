@@ -292,7 +292,7 @@ sections:
         elementId: ''
       - type: ImageBlock
         url: /images/Sbat Logo.svg
-        altText: Wellster logo
+        altText: SBAT logo
         elementId: ''
       - type: ImageBlock
         url: /images/Catenamedia Logo.svg
