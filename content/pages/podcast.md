@@ -182,8 +182,8 @@ seo:
   type: Seo
   metaTitle: Kwame - imaginEngine Sessions Podcast Page
   metaDescription: >-
-    Conversations about AI developments and the future. How do you leverage
-    these new tools. 
+    Conversations about Web3, AI, Robotics developments and the future. How do
+    you leverage these new tools. 
   addTitleSuffix: true
   socialImage: /images/main-hero.jpg
   metaTags: []
