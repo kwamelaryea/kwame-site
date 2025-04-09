@@ -91,7 +91,7 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: Blockchains and Crypto
+      - title: Rewards That Feel Real
         subtitle: ''
         text: "Many misunderstand the benefits of Blockchains and their immutable records, the cryptocurrencies they birthed are misunderstood even less and then you have NFTs which have been confused for jpegs.\_\n\n\n\n\n"
         image:
