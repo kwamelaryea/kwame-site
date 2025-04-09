@@ -287,7 +287,7 @@ sections:
     subtitle: Our customers
     images:
       - type: ImageBlock
-        url: /images/Football365 Logo.svg
+        url: /images/Football365 Logo (1).svg
         altText: Football 365 logo
         elementId: ''
       - type: ImageBlock
