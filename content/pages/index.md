@@ -117,7 +117,7 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: Play That Stays With You
-        subtitle: Democratised Access
+        subtitle: ''
         text: >
           There is now a world of decentralised storage, compute, video hosting,
           and social platforms. Each with their own cultures, communities and
