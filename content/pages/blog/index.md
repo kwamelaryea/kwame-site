@@ -2,7 +2,7 @@
 title: How We Think
 slug: /blog
 numOfPostsPerPage: 0
-enableSearch: true
+enableSearch: false
 topSections:
   - title:
       text: 'How We Think '
