@@ -116,7 +116,7 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: "Web3\_ Products"
+      - title: Play That Stays With You
         subtitle: Democratised Access
         text: >
           There is now a world of decentralised storage, compute, video hosting,
