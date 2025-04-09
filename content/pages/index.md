@@ -58,7 +58,9 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Exploring technologies before adoption
+    subtitle: >-
+      Here’s what we bring to the table, less as tech specs and more as
+      promises:
     items:
       - type: FeaturedItem
         title: Generative AI and Agents
