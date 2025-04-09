@@ -63,7 +63,7 @@ sections:
       promises:
     items:
       - type: FeaturedItem
-        title: Generative AI and Agents
+        title: Worlds That Breathe
         subtitle: Creativity Unleashed
         text: >+
           AI is being talked about everywhere but current most use cases are
