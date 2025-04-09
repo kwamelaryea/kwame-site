@@ -33,7 +33,7 @@ sections:
         type: Button
     media:
       type: ImageBlock
-      url: /images/Kwame 3D Game Character.svg
+      url: /images/Kwame Hero 3D Image.svg
       altText: AI Influencer and Model Hero Image
       elementId: ''
       styles:
