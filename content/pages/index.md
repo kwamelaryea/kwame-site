@@ -64,7 +64,7 @@ sections:
     items:
       - type: FeaturedItem
         title: Worlds That Breathe
-        subtitle: Ownership of Game Assets
+        subtitle: ''
         text: >
           We use blockchain like a brush, painting possibilities where players
           don’t just play—they own a piece of the story. It’s about belonging,
