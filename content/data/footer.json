@@ -60,7 +60,7 @@
         },
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "/#contact",
             "icon": "mail",
             "type": "Social"
         }
