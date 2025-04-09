@@ -181,7 +181,9 @@ isDraft: false
 seo:
   type: Seo
   metaTitle: Kwame - imaginEngine Sessions Podcast Page
-  metaDescription: Write here your new page's description including most relevant keywords.
+  metaDescription: >-
+    Conversations about AI developments and the future. How do you leverage
+    these new tools. 
   addTitleSuffix: true
   socialImage: /images/main-hero.jpg
   metaTags: []
