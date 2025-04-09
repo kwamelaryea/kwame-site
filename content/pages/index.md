@@ -202,7 +202,7 @@ sections:
       styles:
         self:
           textAlign: left
-    subtitle: Where we battle test our ideas
+    subtitle: ''
     text: >
       imaginEngine sessions is our podcast series where we discuss new
       developments and our analysis of where we think things are headed. 
