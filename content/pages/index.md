@@ -285,11 +285,7 @@ sections:
     type: DividerSection
   - type: ImageGallerySection
     subtitle: Our History
-    images:
-      - type: ImageBlock
-        url: /images/empathy-logo.svg
-        altText: Empathy logo
-        elementId: ''
+    images: []
     elementId: ''
     motion: static
     colors: bg-light-fg-dark
