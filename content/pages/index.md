@@ -283,27 +283,6 @@ sections:
           - pb-7
           - pr-7
     type: DividerSection
-  - type: ImageGallerySection
-    subtitle: Our History
-    images: []
-    elementId: ''
-    motion: static
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        margin:
-          - mt-0
-          - ml-0
-          - mb-0
-          - mr-0
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-      subtitle:
-        textAlign: center
   - title:
       text: Get In Touch
       color: text-dark
