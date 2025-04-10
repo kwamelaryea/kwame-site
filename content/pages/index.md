@@ -375,7 +375,7 @@ sections:
           placeholder: Your message
           width: full
           type: TextareaFormControl
-      elementId: contact-form
+      elementId: contact-form netlify
       styles:
         self:
           padding:
@@ -391,8 +391,8 @@ sections:
       submitButton:
         type: SubmitButtonFormControl
         label: Submit
-        showIcon: false
-        icon: arrowRight
+        showIcon: true
+        icon: chevronRight
         iconPosition: right
         style: primary
         elementId: null
