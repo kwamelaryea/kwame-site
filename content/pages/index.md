@@ -392,7 +392,7 @@ sections:
         type: SubmitButtonFormControl
         label: Submit
         showIcon: true
-        icon: arrowRight
+        icon: chevronRight
         iconPosition: right
         style: primary
         elementId: null
