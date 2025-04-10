@@ -65,9 +65,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: >-
-      Here’s what we bring to the table, less as tech specs and more as
-      promises:
+    subtitle: Here's how we put you ahead
     items:
       - type: FeaturedItem
         title: Future First Innovation
