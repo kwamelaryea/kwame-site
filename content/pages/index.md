@@ -375,7 +375,7 @@ sections:
           placeholder: Your message
           width: full
           type: TextareaFormControl
-      elementId: contact-form
+      elementId: contact-form netlify
       styles:
         self:
           padding:
