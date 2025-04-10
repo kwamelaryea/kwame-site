@@ -7,7 +7,9 @@ sections:
       text: 'Evolve or Be Left Behind: Innovation for a New Era'
       color: text-dark
       type: TitleBlock
-    subtitle: Crafting Games That Echo Beyond the Screen
+    subtitle: >-
+      Unlock the Future of Your Business with Visionary Consulting and Proven
+      Expertise
     text: >
       We envision games that don't just entertain—but stirs something deep
       inside. We’re here to help you create that. Drawing from years of playing,
