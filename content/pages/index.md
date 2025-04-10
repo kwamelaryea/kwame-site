@@ -131,9 +131,14 @@ sections:
         type: FeaturedItem
       - title: 'Evolution, Not Revolution'
         subtitle: ''
-        text: >
-          We design with soul, crafting moments that hit like a perfect song.
-          Intuitive, immersive, and true to what players crave.
+        text: >+
+          For established players, we strengthen what works; for disruptors, we
+          shape ambition with discipline. Gradual, sustainable growth is the
+          objective.
+
+
+
+
         image:
           url: /images/icon3.svg
           altText: Featured icon three
