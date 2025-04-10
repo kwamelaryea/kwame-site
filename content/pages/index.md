@@ -72,10 +72,13 @@ sections:
       - type: FeaturedItem
         title: Worlds That Breathe
         subtitle: ''
-        text: >
-          We use blockchain like a brush, painting possibilities where players
-          don’t just play—they own a piece of the story. It’s about belonging,
-          not buzzwords.
+        text: >+
+          We embed AI and future-tech into your business seamlessly, leading the
+          way without breaking what works.
+
+
+
+
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
