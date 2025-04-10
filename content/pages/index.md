@@ -101,7 +101,7 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: Rewards That Feel Real
+      - title: Heart-Felt Product Design
         subtitle: ''
         text: >
           Smart contracts become a way to surprise and delight—think living
