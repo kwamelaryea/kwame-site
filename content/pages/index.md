@@ -409,12 +409,7 @@ sections:
     elementId: contact
 seo:
   metaTitle: Home - Kwa.me - Creative Direction for Web3 Games
-  metaDescription: >-
-    We envision games that don't just entertain—but stirs something deep inside.
-    We’re here to help you create that. Drawing from years of playing, dreaming,
-    and building in the gaming world, we’ve learned one thing: the best games
-    feel like they’re alive. They pull people in, spark connection, and linger
-    in the mind long after the controller’s down.
+  metaDescription: Unlock the Future with Visionary Consulting and Proven Expertise
   socialImage: /images/Kwame Homepage Share Image.png
   type: Seo
   metaTags:
