@@ -103,10 +103,13 @@ sections:
               borderRadius: x-large
       - title: Heart-Felt Product Design
         subtitle: ''
-        text: >
-          Smart contracts become a way to surprise and delight—think living
-          economies where every choice a player makes ripples through the game.
-          It’s magic, not math.
+        text: >+
+          We create products that connect—intuitive, creative, and based on
+          iGaming-honed knowledge of what drives humans.
+
+
+
+
         image:
           url: /images/icon2.svg
           altText: Featured icon two
