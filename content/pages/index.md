@@ -10,7 +10,7 @@ sections:
     subtitle: Unlock the Future with Visionary Consulting and Proven Expertise
     text: >
       Disruption lurks around every corner, standing still is not an option—it's
-      a risk. Innovation is not mere survival; it's mapping the path. 
+      a risk. Innovation is not mere survival; it's mapping the path.
 
 
       We specialize in moving **legacy organizations** out of past constraints
@@ -21,12 +21,6 @@ sections:
       For **new upstarts,** we bring a decade of tried and true understanding
       from the iGaming industry, taking your daring vision and turning it into
       strategies that endure.
-
-
-      We're not advisors—we're partners. We enter your universe, strip away the
-      distraction, and craft solutions that bring things to life. Whether it's
-      building AI-powered products that connect or forging strategies to outpace
-      disruption, our mission is the same: help you not only adapt, but thrive.
 
 
       With us, you're not reacting to change—you're creating it.
