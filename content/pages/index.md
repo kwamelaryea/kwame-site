@@ -9,11 +9,13 @@ sections:
       type: TitleBlock
     subtitle: Unlock the Future with Visionary Consulting and Proven Expertise
     text: >
-      In a world where disruption lurks around every corner, standing still is
-      not an option—it's a risk. Innovation is not mere survival; it's mapping
-      the path. We specialize in moving **legacy organizations** out of past
-      constraints and into the leading edge of innovations like AI, enabling you
-      to transform without giving up what made you strong. 
+      Disruption lurks around every corner, standing still is not an option—it's
+      a risk. Innovation is not mere survival; it's mapping the path. 
+
+
+      We specialize in moving **legacy organizations** out of past constraints
+      and into the leading edge of innovations like AI, enabling you to
+      transform without giving up what made you strong.
 
 
       For **new upstarts,** we bring a decade of tried and true understanding
@@ -24,7 +26,7 @@ sections:
       We're not advisors—we're partners. We enter your universe, strip away the
       distraction, and craft solutions that bring things to life. Whether it's
       building AI-powered products that connect or forging strategies to outpace
-      disruption, our mission is the same: help you not only adapt, but thrive. 
+      disruption, our mission is the same: help you not only adapt, but thrive.
 
 
       With us, you're not reacting to change—you're creating it.
