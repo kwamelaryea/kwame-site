@@ -4,23 +4,26 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Find the Heartbeat of Your Game
+      text: Evolve to Survive
       color: text-dark
       type: TitleBlock
-    subtitle: Crafting Games That Echo Beyond the Screen
+    subtitle: Unlock the Future with Visionary Consulting and Proven Expertise
     text: >
-      We envision games that don't just entertain—but stirs something deep
-      inside. We’re here to help you create that. Drawing from years of playing,
-      dreaming, and building in the gaming world, we’ve learned one thing: the
-      best games feel like they’re alive. They pull people in, spark connection,
-      and linger in the mind long after the controller’s down.
+      Disruption lurks around every corner, standing still is not an option—it's
+      a risk. Innovation is not mere survival; it's mapping the path.
 
 
-      We don’t chase trends or gimmicks. Instead, we dig for the spark—the one
-      thing that makes your game yours—and fan it into something unforgettable.
-      Crypto and Web3? These are tools we wield to create new player
-      experiences. Our mission is to strip away the noise and let the heart of
-      your game shine through.
+      We specialize in moving **legacy organizations** out of past constraints
+      and into the leading edge of innovations like AI, enabling you to
+      transform without giving up what made you strong.
+
+
+      For **new upstarts,** we bring a decade of tried and true understanding
+      from the iGaming industry, taking your daring vision and turning it into
+      strategies that endure.
+
+
+      With us, you're not reacting to change—you're creating it.
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
@@ -58,17 +61,18 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: >-
-      Here’s what we bring to the table, less as tech specs and more as
-      promises:
+    subtitle: Here's how we put you ahead
     items:
       - type: FeaturedItem
-        title: Worlds That Breathe
+        title: Future First Innovation
         subtitle: ''
-        text: >
-          We use blockchain like a brush, painting possibilities where players
-          don’t just play—they own a piece of the story. It’s about belonging,
-          not buzzwords.
+        text: >+
+          We embed AI and future-tech into your business seamlessly, leading the
+          way without breaking what works.
+
+
+
+
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -91,12 +95,15 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: Rewards That Feel Real
+      - title: Heart-Felt Product Design
         subtitle: ''
-        text: >
-          Smart contracts become a way to surprise and delight—think living
-          economies where every choice a player makes ripples through the game.
-          It’s magic, not math.
+        text: >+
+          We create products that connect—intuitive, creative, and based on
+          iGaming-honed knowledge of what drives humans.
+
+
+
+
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -116,11 +123,16 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: Play That Stays With You
+      - title: 'Evolution, Not Revolution'
         subtitle: ''
-        text: >
-          We design with soul, crafting moments that hit like a perfect song.
-          Intuitive, immersive, and true to what players crave.
+        text: >+
+          For established players, we strengthen what works; for disruptors, we
+          shape ambition with discipline. Gradual, sustainable growth is the
+          objective.
+
+
+
+
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -170,22 +182,27 @@ sections:
           textAlign: center
       type: TitleBlock
     subtitle: ''
-    text: >
-      In a sea of noise, we’re the quiet voice whispering, “What’s the soul of
-      your game?” Forget the hype. We’re not here to stack tech for the sake of
-      it—we’re here to build experiences that stick with people. With a decade
-      of gaming in our bones, we blend instinct and imagination to turn your
-      ideas into something timeless.
+    text: >+
+      Disruption isn’t your enemy—it’s your wake-up call. The future belongs to
+      those who evolve, who refuse to let yesterday limit tomorrow. With a
+      decade of lessons from the iGaming industry, we’ve mastered user
+      engagement, risk-taking, and technological leaps—now, we’re bringing that
+      to you.
 
 
-      Crypto and Web3 are just the beginning—a way to dream bigger, connect
-      deeper, and make games that feel like home. We’re not consultants; we’re
-      collaborators, here to uncover what’s real and amplify it. Let’s create
-      something that moves the world, one player at a time.
+      For **legacy clients**, we're your bridge to the future—uniting AI and new
+      technology to change without disruption. For a **new startups**, we're the
+      seasoned voice that keeps your vision grounded and your mind sharp. We
+      don't talk about progress—ours is the doing required to achieve it. Every
+      project is a chance to simplify, to push boundaries, and to build
+      something lasting. 
 
 
-      This version leans into storytelling and passion, keeping it grounded yet
-      uplifting, with just enough of that visionary edge.
+      Together, let's not just meet the future—let's build it.
+
+
+
+
     colors: bg-light-fg-dark
     styles:
       self:
@@ -329,9 +346,13 @@ sections:
       color: text-dark
       type: TitleBlock
     subtitle: ''
-    text: >
-      Whether you need more information or you would like to get in touch for an
-      initial consultation, feel free to use the form and drop us a message.
+    text: >+
+      Ready to innovate and lead? Let's make your vision happen—get in touch
+      today.
+
+
+
+
     media:
       fields:
         - name: name
@@ -384,12 +405,7 @@ sections:
     elementId: contact
 seo:
   metaTitle: Home - Kwa.me - Creative Direction for Web3 Games
-  metaDescription: >-
-    We envision games that don't just entertain—but stirs something deep inside.
-    We’re here to help you create that. Drawing from years of playing, dreaming,
-    and building in the gaming world, we’ve learned one thing: the best games
-    feel like they’re alive. They pull people in, spark connection, and linger
-    in the mind long after the controller’s down.
+  metaDescription: Unlock the Future with Visionary Consulting and Proven Expertise
   socialImage: /images/Kwame Homepage Share Image.png
   type: Seo
   metaTags:
