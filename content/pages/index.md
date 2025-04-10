@@ -10,19 +10,27 @@ sections:
     subtitle: >-
       Unlock the Future of Your Business with Visionary Consulting and Proven
       Expertise
-    text: >
-      We envision games that don't just entertain—but stirs something deep
-      inside. We’re here to help you create that. Drawing from years of playing,
-      dreaming, and building in the gaming world, we’ve learned one thing: the
-      best games feel like they’re alive. They pull people in, spark connection,
-      and linger in the mind long after the controller’s down.
+    text: >+
+      In a world where disruption lurks around every corner, standing still is
+      not an option—it's a risk. Innovation is not mere survival; it's mapping
+      the path. We specialize in moving **legacy organizations** out of past
+      constraints and into the leading edge of innovations like AI, enabling you
+      to transform without giving up what made you strong. For **new upstarts,**
+      we bring a decade of tried and true understanding from the iGaming
+      industry, taking your daring vision and turning it into strategies that
+      endure.
 
 
-      We don’t chase trends or gimmicks. Instead, we dig for the spark—the one
-      thing that makes your game yours—and fan it into something unforgettable.
-      Crypto and Web3? These are tools we wield to create new player
-      experiences. Our mission is to strip away the noise and let the heart of
-      your game shine through.
+      We're not advisors—we're partners. We enter your universe, strip away the
+      distraction, and craft solutions that bring things to life. Whether it's
+      building AI-powered products that connect or forging strategies to outpace
+      disruption, our mission is the same: help you not only adapt, but thrive.
+      With us, you're not reacting to change—you're creating it. Let's build
+      something that endures, something that leads.
+
+
+
+
     actions:
       - label: Book Now
         altText: Book a Consultation With Us
