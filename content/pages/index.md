@@ -4,7 +4,7 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Find the Heartbeat of Your Game
+      text: 'Evolve or Be Left Behind: Innovation for a New Era'
       color: text-dark
       type: TitleBlock
     subtitle: Crafting Games That Echo Beyond the Screen
