@@ -186,22 +186,27 @@ sections:
           textAlign: center
       type: TitleBlock
     subtitle: ''
-    text: >
-      In a sea of noise, we’re the quiet voice whispering, “What’s the soul of
-      your game?” Forget the hype. We’re not here to stack tech for the sake of
-      it—we’re here to build experiences that stick with people. With a decade
-      of gaming in our bones, we blend instinct and imagination to turn your
-      ideas into something timeless.
+    text: >+
+      Disruption isn’t your enemy—it’s your wake-up call. The future belongs to
+      those who evolve, who refuse to let yesterday limit tomorrow. With a
+      decade of lessons from the iGaming industry, we’ve mastered user
+      engagement, risk-taking, and technological leaps—now, we’re bringing that
+      to you.
 
 
-      Crypto and Web3 are just the beginning—a way to dream bigger, connect
-      deeper, and make games that feel like home. We’re not consultants; we’re
-      collaborators, here to uncover what’s real and amplify it. Let’s create
-      something that moves the world, one player at a time.
+      For **legacy clients**, we're your bridge to the future—uniting AI and new
+      technology to change without disruption. For a **new startups**, we're the
+      seasoned voice that keeps your vision grounded and your mind sharp. We
+      don't talk about progress—ours is the doing required to achieve it. Every
+      project is a chance to simplify, to push boundaries, and to build
+      something lasting. 
 
 
-      This version leans into storytelling and passion, keeping it grounded yet
-      uplifting, with just enough of that visionary edge.
+      Together, let's not just meet the future—let's build it.
+
+
+
+
     colors: bg-light-fg-dark
     styles:
       self:
