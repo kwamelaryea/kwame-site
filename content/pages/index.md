@@ -129,7 +129,7 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: Play That Stays With You
+      - title: 'Evolution, Not Revolution'
         subtitle: ''
         text: >
           We design with soul, crafting moments that hit like a perfect song.
