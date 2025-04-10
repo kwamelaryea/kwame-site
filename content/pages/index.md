@@ -4,7 +4,7 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: 'Evolve or Be Left Behind: Innovation for a New Era'
+      text: Evolve to Survive
       color: text-dark
       type: TitleBlock
     subtitle: >-
