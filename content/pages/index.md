@@ -7,9 +7,7 @@ sections:
       text: Evolve to Survive
       color: text-dark
       type: TitleBlock
-    subtitle: >-
-      Unlock the Future of Your Business with Visionary Consulting and Proven
-      Expertise
+    subtitle: Unlock the Future with Visionary Consulting and Proven Expertise
     text: >+
       In a world where disruption lurks around every corner, standing still is
       not an option—it's a risk. Innovation is not mere survival; it's mapping
