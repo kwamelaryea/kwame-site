@@ -396,7 +396,7 @@ sections:
         icon: chevronRight
         iconPosition: right
         style: primary
-        elementId: null
+        elementId: submit
     badge:
       label: Contact Us
       color: text-primary
