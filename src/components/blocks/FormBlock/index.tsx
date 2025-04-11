@@ -5,9 +5,17 @@ import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
+// Helper function to encode form data for fetch
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
     const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
+    const [submitted, setSubmitted] = React.useState(false); // Add state for submission status
 
     if (fields.length === 0) {
         return null;
@@ -18,7 +26,48 @@ export default function FormBlock(props) {
 
         const data = new FormData(formRef.current);
         const value = Object.fromEntries(data.entries());
-        alert(`Form data: ${JSON.stringify(value)}`);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": elementId, ...value }) // Use elementId as form name
+        })
+            .then(() => {
+                setSubmitted(true); // Set submission status to true on success
+                console.log('Form successfully submitted');
+                // Optionally clear the form or show a success message
+                // formRef.current.reset(); // Uncomment to clear form
+            })
+            .catch(error => alert(error));
+    }
+
+    // Display success message if form submitted
+    if (submitted) {
+        return (
+            <div
+                className={classNames(
+                    'sb-component',
+                    'sb-component-block',
+                    'sb-component-form-block',
+                    'p-4', // Add some padding
+                    'text-center', // Center text
+                    className,
+                    styles?.self?.margin ? mapStyles({ margin: styles?.self?.margin }) : undefined,
+                    styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined,
+                    styles?.self?.borderWidth && styles?.self?.borderWidth !== 0 && styles?.self?.borderStyle !== 'none'
+                        ? mapStyles({
+                            borderWidth: styles?.self?.borderWidth,
+                            borderStyle: styles?.self?.borderStyle,
+                            borderColor: styles?.self?.borderColor ?? 'border-primary'
+                        })
+                        : undefined,
+                    styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
+                )}
+                data-sb-field-path={fieldPath}
+            >
+                <p>Thank you for your submission!</p>
+            </div>
+        );
     }
 
     return (
@@ -32,10 +81,10 @@ export default function FormBlock(props) {
                 styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined,
                 styles?.self?.borderWidth && styles?.self?.borderWidth !== 0 && styles?.self?.borderStyle !== 'none'
                     ? mapStyles({
-                          borderWidth: styles?.self?.borderWidth,
-                          borderStyle: styles?.self?.borderStyle,
-                          borderColor: styles?.self?.borderColor ?? 'border-primary'
-                      })
+                        borderWidth: styles?.self?.borderWidth,
+                        borderStyle: styles?.self?.borderStyle,
+                        borderColor: styles?.self?.borderColor ?? 'border-primary'
+                    })
                     : undefined,
                 styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
             )}
@@ -43,8 +92,12 @@ export default function FormBlock(props) {
             id={elementId}
             onSubmit={handleSubmit}
             ref={formRef}
-            data-sb-field-path= {fieldPath}
+            data-sb-field-path={fieldPath}
+            data-netlify="true" // Add Netlify attribute
+            data-netlify-honeypot="bot-field" // Add Netlify honeypot attribute
         >
+            {/* Netlify honeypot field */}
+            <input name="bot-field" style={{ display: 'none' }} />
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
