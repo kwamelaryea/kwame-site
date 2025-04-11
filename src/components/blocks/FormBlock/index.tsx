@@ -1,15 +1,25 @@
 import * as React from 'react';
 import classNames from 'classnames';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
+// Helper function to encode form data for fetch
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
+    const recaptchaRef = React.createRef<ReCAPTCHA>();
     const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
     const [submitted, setSubmitted] = React.useState(false);
     const [error, setError] = React.useState(false);
+    const [recaptchaValue, setRecaptchaValue] = React.useState<string | null>(null);
 
     if (fields.length === 0) {
         return null;
@@ -19,7 +29,15 @@ export default function FormBlock(props) {
         event.preventDefault();
         setError(false);
 
+        // Verify reCAPTCHA first
+        if (!recaptchaValue) {
+            alert("Please complete the reCAPTCHA verification");
+            return false;
+        }
+
+        // Get form data and add the reCAPTCHA token
         const formData = new FormData(formRef.current);
+        formData.append('g-recaptcha-response', recaptchaValue);
 
         // Convert FormData to URLSearchParams compatible format
         const searchParams = new URLSearchParams();
@@ -44,13 +62,22 @@ export default function FormBlock(props) {
                 if (formRef.current) {
                     formRef.current.reset();
                 }
+                // Reset reCAPTCHA
+                recaptchaRef.current?.reset();
                 return response;
             })
             .catch(error => {
                 console.error("Error submitting form:", error);
                 setError(true);
             });
+
+        return false;
     }
+
+    // Handle reCAPTCHA change
+    const handleRecaptchaChange = (value: string | null) => {
+        setRecaptchaValue(value);
+    };
 
     // Display success message if form submitted
     if (submitted) {
@@ -108,6 +135,7 @@ export default function FormBlock(props) {
             data-sb-field-path={fieldPath}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
         >
             {error && (
                 <div className="text-red-500 mb-4">
@@ -131,6 +159,18 @@ export default function FormBlock(props) {
                     }
                     return <FormControl key={index} {...field} {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />;
                 })}
+
+                {/* reCAPTCHA component */}
+                <div className="w-full mt-4">
+                    <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} // Using environment variable with fallback
+                        onChange={handleRecaptchaChange}
+                    />
+                    <small className="text-gray-500 mt-2 block">
+                        This site is protected by reCAPTCHA.
+                    </small>
+                </div>
             </div>
             {submitButton && (
                 <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>

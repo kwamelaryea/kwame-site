@@ -7,11 +7,12 @@
 
 <body>
     <!-- A hidden form that Netlify can detect during build -->
-    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message"></textarea>
         <input type="hidden" name="form-name" value="contact" />
+        <div data-netlify-recaptcha="true"></div>
     </form>
 </body>
 
