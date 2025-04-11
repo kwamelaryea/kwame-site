@@ -20,26 +20,20 @@ export default function FormBlock(props) {
         setError(false);
 
         const formData = new FormData(formRef.current);
-        const data = Object.fromEntries(formData);
 
-        // Encode the form data for Netlify
-        const encodedData = Object.keys(data)
-            .map(key => {
-                const value = data[key];
-                // Handle different types of form values
-                const stringValue = typeof value === 'string' ? value :
-                    (value instanceof File ? value.name : String(value));
-                return encodeURIComponent(key) + "=" + encodeURIComponent(stringValue);
-            })
-            .join("&");
+        // Convert FormData to URLSearchParams compatible format
+        const searchParams = new URLSearchParams();
+        for (const [key, value] of formData.entries()) {
+            searchParams.append(key, value.toString());
+        }
 
         // Submit to Netlify
-        fetch("/", {
+        fetch("/?form-name=contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
-            body: encodedData
+            body: searchParams.toString()
         })
             .then(response => {
                 if (!response.ok) {
@@ -108,11 +102,12 @@ export default function FormBlock(props) {
             name="contact"
             id="contact"
             method="POST"
+            action="/success"
             onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
             data-netlify="true"
-            netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
         >
             {error && (
                 <div className="text-red-500 mb-4">
