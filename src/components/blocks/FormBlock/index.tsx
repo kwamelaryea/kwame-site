@@ -26,52 +26,36 @@ export default function FormBlock(props) {
     }
 
     function handleSubmit(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent natural submission initially
         setError(false);
 
         // Verify reCAPTCHA first
         if (!recaptchaValue) {
             alert("Please complete the reCAPTCHA verification");
-            return false;
+            return; // Stop if reCAPTCHA not done
         }
 
-        // Get form data and add the reCAPTCHA token
-        const formData = new FormData(formRef.current);
-        formData.append('g-recaptcha-response', recaptchaValue);
+        // If reCAPTCHA is valid, add the token to the form and submit natively
+        if (formRef.current) {
+            // Find or create hidden input for reCAPTCHA response
+            let recaptchaInput = formRef.current.querySelector('input[name="g-recaptcha-response"]') as HTMLInputElement | null;
+            if (!recaptchaInput) {
+                recaptchaInput = document.createElement('input');
+                recaptchaInput.type = 'hidden';
+                recaptchaInput.name = 'g-recaptcha-response';
+                formRef.current.appendChild(recaptchaInput);
+            }
+            recaptchaInput.value = recaptchaValue;
 
-        // Convert FormData to URLSearchParams compatible format
-        const searchParams = new URLSearchParams();
-        for (const [key, value] of formData.entries()) {
-            searchParams.append(key, value.toString());
+            console.log("Submitting form natively to Netlify with reCAPTCHA token...");
+            // Set submitted state before native submit if you want immediate feedback,
+            // but note the page might reload/redirect due to native submission.
+            // setSubmitted(true);
+            formRef.current.submit(); // Trigger native form submission
+        } else {
+            console.error("Form reference not found.");
+            setError(true);
         }
-
-        // Submit to Netlify
-        fetch("/?form-name=contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body: searchParams.toString()
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Form submission failed with status ${response.status}`);
-                }
-                console.log("Form successfully submitted to Netlify!");
-                setSubmitted(true);
-                if (formRef.current) {
-                    formRef.current.reset();
-                }
-                // Reset reCAPTCHA
-                recaptchaRef.current?.reset();
-                return response;
-            })
-            .catch(error => {
-                console.error("Error submitting form:", error);
-                setError(true);
-            });
-
-        return false;
     }
 
     // Handle reCAPTCHA change
@@ -129,7 +113,6 @@ export default function FormBlock(props) {
             name="contact"
             id="contact"
             method="POST"
-            action="/success"
             onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
@@ -164,7 +147,7 @@ export default function FormBlock(props) {
                 <div className="w-full mt-4">
                     <ReCAPTCHA
                         ref={recaptchaRef}
-                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} // Using environment variable with fallback
+                        sitekey="6LdEFxUrAAAAAKAfXirVjGLOiILHFOFDA1hzb9E7" // Using the actual production site key
                         onChange={handleRecaptchaChange}
                     />
                     <small className="text-gray-500 mt-2 block">
