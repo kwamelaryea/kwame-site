@@ -375,7 +375,8 @@ sections:
           placeholder: Your message
           width: full
           type: TextareaFormControl
-      elementId: contact-form netlify
+          isRequired: true
+      elementId: contact-form
       styles:
         self:
           padding:
@@ -395,7 +396,7 @@ sections:
         icon: chevronRight
         iconPosition: right
         style: primary
-        elementId: null
+        elementId: submit
     badge:
       label: Contact Us
       color: text-primary
