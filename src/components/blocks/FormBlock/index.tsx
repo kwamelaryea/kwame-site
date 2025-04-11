@@ -30,7 +30,7 @@ export default function FormBlock(props) {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": elementId, ...value }) // Use elementId as form name
+            body: encode({ "form-name": "contact", ...value }) // Use "contact" as the form name for Netlify
         })
             .then(() => {
                 setSubmitted(true); // Set submission status to true on success
