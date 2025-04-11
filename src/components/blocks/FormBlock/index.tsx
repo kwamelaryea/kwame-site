@@ -5,34 +5,57 @@ import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
-// Helper function to encode form data for fetch
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
-
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
     const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
-    const [submitted, setSubmitted] = React.useState(false); // Add state for submission status
+    const [submitted, setSubmitted] = React.useState(false);
+    const [error, setError] = React.useState(false);
 
     if (fields.length === 0) {
         return null;
     }
 
     function handleSubmit(event) {
-        // Allow the form to submit naturally to Netlify
-        // This is more reliable than using fetch with Netlify forms
-        console.log('Form submitted to Netlify');
-        // We'll still show our success message
-        setSubmitted(true);
+        event.preventDefault();
+        setError(false);
 
-        // Don't prevent default - let the form submit naturally to Netlify's handlers
-        // event.preventDefault();
+        const formData = new FormData(formRef.current);
+        const data = Object.fromEntries(formData);
 
-        // Return true to allow form submission
-        return true;
+        // Encode the form data for Netlify
+        const encodedData = Object.keys(data)
+            .map(key => {
+                const value = data[key];
+                // Handle different types of form values
+                const stringValue = typeof value === 'string' ? value :
+                    (value instanceof File ? value.name : String(value));
+                return encodeURIComponent(key) + "=" + encodeURIComponent(stringValue);
+            })
+            .join("&");
+
+        // Submit to Netlify
+        fetch("/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: encodedData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Form submission failed with status ${response.status}`);
+                }
+                console.log("Form successfully submitted to Netlify!");
+                setSubmitted(true);
+                if (formRef.current) {
+                    formRef.current.reset();
+                }
+                return response;
+            })
+            .catch(error => {
+                console.error("Error submitting form:", error);
+                setError(true);
+            });
     }
 
     // Display success message if form submitted
@@ -43,8 +66,8 @@ export default function FormBlock(props) {
                     'sb-component',
                     'sb-component-block',
                     'sb-component-form-block',
-                    'p-4', // Add some padding
-                    'text-center', // Center text
+                    'p-4',
+                    'text-center',
                     className,
                     styles?.self?.margin ? mapStyles({ margin: styles?.self?.margin }) : undefined,
                     styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined,
@@ -85,20 +108,23 @@ export default function FormBlock(props) {
             name="contact"
             id="contact"
             method="POST"
-            action="/"
             onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
         >
-            {/* Netlify honeypot field */}
-            <input name="bot-field" style={{ display: 'none' }} />
+            {error && (
+                <div className="text-red-500 mb-4">
+                    There was an error submitting the form. Please try again.
+                </div>
+            )}
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
             >
-                <input type="hidden" name="form-name" value="contact" />
                 {fields.map((field, index) => {
                     const modelName = field.__metadata.modelName;
                     if (!modelName) {
