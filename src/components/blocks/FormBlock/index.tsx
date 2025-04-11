@@ -48,10 +48,9 @@ export default function FormBlock(props) {
             recaptchaInput.value = recaptchaValue;
 
             console.log("Submitting form natively to Netlify with reCAPTCHA token...");
-            // Set submitted state before native submit if you want immediate feedback,
-            // but note the page might reload/redirect due to native submission.
-            // setSubmitted(true);
-            formRef.current.submit(); // Trigger native form submission
+            // Call the native submit method directly from the prototype
+            // to avoid issues with elements named or id'd 'submit'
+            HTMLFormElement.prototype.submit.call(formRef.current);
         } else {
             console.error("Form reference not found.");
             setError(true);
