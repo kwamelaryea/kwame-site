@@ -102,7 +102,7 @@ export default function FormBlock(props) {
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
             >
-                <input type="hidden" name="form-name" value={elementId} />
+                <input type="hidden" name="form-name" value="contact" />
                 {fields.map((field, index) => {
                     const modelName = field.__metadata.modelName;
                     if (!modelName) {
