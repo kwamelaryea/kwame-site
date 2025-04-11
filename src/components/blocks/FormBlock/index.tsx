@@ -22,23 +22,17 @@ export default function FormBlock(props) {
     }
 
     function handleSubmit(event) {
-        event.preventDefault();
+        // Allow the form to submit naturally to Netlify
+        // This is more reliable than using fetch with Netlify forms
+        console.log('Form submitted to Netlify');
+        // We'll still show our success message
+        setSubmitted(true);
 
-        const data = new FormData(formRef.current);
-        const value = Object.fromEntries(data.entries());
+        // Don't prevent default - let the form submit naturally to Netlify's handlers
+        // event.preventDefault();
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...value }) // Use "contact" as the form name for Netlify
-        })
-            .then(() => {
-                setSubmitted(true); // Set submission status to true on success
-                console.log('Form successfully submitted');
-                // Optionally clear the form or show a success message
-                // formRef.current.reset(); // Uncomment to clear form
-            })
-            .catch(error => alert(error));
+        // Return true to allow form submission
+        return true;
     }
 
     // Display success message if form submitted
@@ -88,13 +82,15 @@ export default function FormBlock(props) {
                     : undefined,
                 styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
             )}
-            name={elementId}
-            id={elementId}
+            name="contact"
+            id="contact"
+            method="POST"
+            action="/"
             onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
-            data-netlify="true" // Add Netlify attribute
-            data-netlify-honeypot="bot-field" // Add Netlify honeypot attribute
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
         >
             {/* Netlify honeypot field */}
             <input name="bot-field" style={{ display: 'none' }} />
