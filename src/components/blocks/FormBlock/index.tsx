@@ -1,5 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
@@ -14,26 +15,56 @@ const encode = (data) => {
 
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
+    const recaptchaRef = React.createRef<ReCAPTCHA>();
     const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
     const [submitted, setSubmitted] = React.useState(false); // Add state for submission status
+    const [recaptchaValue, setRecaptchaValue] = React.useState<string | null>(null);
 
     if (fields.length === 0) {
         return null;
     }
 
     function handleSubmit(event) {
-        // Allow the form to submit naturally to Netlify
-        // This is more reliable than using fetch with Netlify forms
-        console.log('Form submitted to Netlify');
-        // We'll still show our success message
-        setSubmitted(true);
+        event.preventDefault(); // We need to prevent default to handle reCAPTCHA
 
-        // Don't prevent default - let the form submit naturally to Netlify's handlers
-        // event.preventDefault();
+        // Verify reCAPTCHA first
+        if (!recaptchaValue) {
+            alert("Please complete the reCAPTCHA verification");
+            return false;
+        }
 
-        // Return true to allow form submission
-        return true;
+        // Get form data and add the reCAPTCHA token
+        const formData = new FormData(formRef.current);
+        formData.append('g-recaptcha-response', recaptchaValue);
+
+        // Submit the form programmatically to Netlify
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({
+                "form-name": "contact",
+                "g-recaptcha-response": recaptchaValue,
+                ...Object.fromEntries(formData)
+            })
+        })
+            .then(response => {
+                console.log("Form successfully submitted to Netlify!");
+                setSubmitted(true);
+                // Reset reCAPTCHA
+                recaptchaRef.current?.reset();
+            })
+            .catch(error => {
+                console.error("Form submission error:", error);
+                alert("There was an error submitting the form. Please try again.");
+            });
+
+        return false;
     }
+
+    // Handle reCAPTCHA change
+    const handleRecaptchaChange = (value: string | null) => {
+        setRecaptchaValue(value);
+    };
 
     // Display success message if form submitted
     if (submitted) {
@@ -85,12 +116,12 @@ export default function FormBlock(props) {
             name="contact"
             id="contact"
             method="POST"
-            action="/"
             onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
         >
             {/* Netlify honeypot field */}
             <input name="bot-field" style={{ display: 'none' }} />
@@ -110,6 +141,18 @@ export default function FormBlock(props) {
                     }
                     return <FormControl key={index} {...field} {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />;
                 })}
+
+                {/* reCAPTCHA component */}
+                <div className="w-full mt-4">
+                    <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} // Using environment variable with fallback
+                        onChange={handleRecaptchaChange}
+                    />
+                    <small className="text-gray-500 mt-2 block">
+                        This site is protected by reCAPTCHA.
+                    </small>
+                </div>
             </div>
             {submitButton && (
                 <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
