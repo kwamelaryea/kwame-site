@@ -2,18 +2,23 @@
 <html>
 
 <head>
-    <title>Contact Form</title>
+    <title>Hidden Netlify Form</title>
 </head>
 
 <body>
     <!-- A hidden form that Netlify can detect during build -->
+    <!-- Ensure all attributes match the React form -->
     <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+        {/* Ensure all fields submitted via AJAX exist here */}
         <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message"></textarea>
+        {/* Explicit hidden fields for Netlify */}
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
         <input type="hidden" name="g-recaptcha-response" />
-        <div data-netlify-recaptcha="true"></div>
+        {/* The div placeholder is not strictly needed if form has data-netlify-recaptcha */}
+        {/* <div data-netlify-recaptcha="true"></div> */}
     </form>
 </body>
 
