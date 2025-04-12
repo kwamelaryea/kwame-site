@@ -26,35 +26,70 @@ export default function FormBlock(props) {
     }
 
     function handleSubmit(event) {
-        event.preventDefault(); // Prevent natural submission initially
+        event.preventDefault(); // Prevent default to handle submission via fetch
         setError(false);
 
         // Verify reCAPTCHA first
         if (!recaptchaValue) {
             alert("Please complete the reCAPTCHA verification");
-            return; // Stop if reCAPTCHA not done
+            return;
         }
 
-        // If reCAPTCHA is valid, add the token to the form and submit natively
-        if (formRef.current) {
-            // Find or create hidden input for reCAPTCHA response
-            let recaptchaInput = formRef.current.querySelector('input[name="g-recaptcha-response"]') as HTMLInputElement | null;
-            if (!recaptchaInput) {
-                recaptchaInput = document.createElement('input');
-                recaptchaInput.type = 'hidden';
-                recaptchaInput.name = 'g-recaptcha-response';
-                formRef.current.appendChild(recaptchaInput);
-            }
-            recaptchaInput.value = recaptchaValue;
-
-            console.log("Submitting form natively to Netlify with reCAPTCHA token...");
-            // Call the native submit method directly from the prototype
-            // to avoid issues with elements named or id'd 'submit'
-            HTMLFormElement.prototype.submit.call(formRef.current);
-        } else {
-            console.error("Form reference not found.");
-            setError(true);
+        // Prepare form data for fetch, including reCAPTCHA
+        const formData = new FormData(formRef.current);
+        // Ensure form-name is present for Netlify
+        if (!formData.has("form-name")) {
+            formData.append("form-name", "contact");
         }
+        // Add reCAPTCHA response
+        formData.append('g-recaptcha-response', recaptchaValue);
+
+        // Convert FormData to URLSearchParams for correct encoding
+        const searchParams = new URLSearchParams();
+        for (const [key, value] of formData.entries()) {
+            searchParams.append(key, value.toString());
+        }
+
+        console.log("Submitting form via fetch to Netlify...");
+
+        // Submit via fetch
+        fetch("/", { // Posting to the root path is standard for Netlify forms with JS
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: searchParams.toString(),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    // Log detailed error info if possible
+                    response.text().then(text => {
+                        console.error(`Form submission failed: ${response.status} ${response.statusText}`, text);
+                        setError(true);
+                        alert(`Form submission failed: ${response.statusText}. Please try again.`);
+                    }).catch(() => {
+                        // Fallback if reading response text fails
+                        console.error(`Form submission failed: ${response.status} ${response.statusText}`);
+                        setError(true);
+                        alert(`Form submission failed: ${response.statusText}. Please try again.`);
+                    });
+                    // We still need to throw an error to be caught by the outer .catch
+                    throw new Error(`Form submission failed with status ${response.status}`);
+                }
+                // Successful submission
+                console.log("Form successfully submitted to Netlify via fetch!");
+                setSubmitted(true);
+                if (formRef.current) {
+                    formRef.current.reset(); // Clear the form
+                }
+                recaptchaRef.current?.reset(); // Reset reCAPTCHA
+            })
+            .catch(error => {
+                // Catch fetch errors (network issues) or the error thrown above
+                if (!error.message.includes('Form submission failed')) { // Avoid double alerting
+                    console.error("Fetch error submitting form:", error);
+                    setError(true);
+                    alert("An error occurred submitting the form. Please check your connection and try again.");
+                }
+            });
     }
 
     // Handle reCAPTCHA change
