@@ -35,28 +35,31 @@ export default function FormBlock(props) {
             return;
         }
 
-        // Prepare form data for fetch, including reCAPTCHA
+        // Prepare form data
         const formData = new FormData(formRef.current);
-        // Ensure form-name is present for Netlify
-        if (!formData.has("form-name")) {
-            formData.append("form-name", "contact");
-        }
-        // Add reCAPTCHA response
-        formData.append('g-recaptcha-response', recaptchaValue);
 
-        // Convert FormData to URLSearchParams for correct encoding
-        const searchParams = new URLSearchParams();
+        // Explicitly construct URLSearchParams for the fetch body
+        const payload = new URLSearchParams();
+        payload.append("form-name", "contact"); // Ensure form-name is always sent
+        payload.append("bot-field", formData.get("bot-field")?.toString() || ""); // Include honeypot value (even if empty)
+        payload.append('g-recaptcha-response', recaptchaValue); // Add reCAPTCHA response
+
+        // Add other form fields
         for (const [key, value] of formData.entries()) {
-            searchParams.append(key, value.toString());
+            // Avoid duplicating fields already added
+            if (key !== "form-name" && key !== "bot-field" && key !== "g-recaptcha-response") {
+                payload.append(key, value.toString());
+            }
         }
 
-        console.log("Submitting form via fetch to Netlify...");
+        console.log("Submitting form via fetch to Netlify with explicit payload...");
+        console.log("Payload:", payload.toString()); // Log the payload for debugging
 
         // Submit via fetch
         fetch("/", { // Posting to the root path is standard for Netlify forms with JS
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: searchParams.toString(),
+            body: payload.toString(),
         })
             .then(response => {
                 if (!response.ok) {
