@@ -81,7 +81,7 @@ function CarouselVariants(props) {
     }
 }
 
-function CarouselWithNavigation({ items = [], hasTopMargin, hasSectionTitle, hasAnnotations }) {
+function CarouselWithNavigation({ items = [] as any[], hasTopMargin, hasSectionTitle, hasAnnotations }) {
     const FeaturedItem = getComponent('FeaturedItem');
     const [swiperRef, setSwiperRef] = React.useState<SwiperClass>();
 
