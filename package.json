@@ -29,6 +29,7 @@
         "@stackbit/cms-git": "^0.0.14",
         "@stackbit/types": "^2.1.10",
         "@types/glob": "^8.1.0",
+        "@types/nodemailer": "^6.4.17",
         "@types/react": "^19.0.4",
         "@types/react-dom": "^19.0.1",
         "autoprefixer": "^10.4.19",
