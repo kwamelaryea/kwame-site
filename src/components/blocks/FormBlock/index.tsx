@@ -6,98 +6,71 @@ import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
-// Helper function to encode form data for fetch
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
-
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
     const recaptchaRef = React.createRef<ReCAPTCHA>();
-    const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
+    const { fields = [], elementId = 'contact', submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props; // Default elementId to 'contact'
     const [submitted, setSubmitted] = React.useState(false);
-    const [error, setError] = React.useState(false);
+    const [error, setError] = React.useState<string | null>(null);
     const [recaptchaValue, setRecaptchaValue] = React.useState<string | null>(null);
 
     if (fields.length === 0) {
         return null;
     }
 
-    function handleSubmit(event) {
-        event.preventDefault(); // Prevent default to handle submission via fetch
-        setError(false);
+    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+        setError(null); // Clear previous errors
 
-        // Verify reCAPTCHA first
         if (!recaptchaValue) {
-            alert("Please complete the reCAPTCHA verification");
+            setError("Please complete the reCAPTCHA verification.");
             return;
         }
 
-        // Prepare form data
-        const formData = new FormData(formRef.current);
+        const formData = new FormData(formRef.current!);
+        const data: { [key: string]: any } = Object.fromEntries(formData);
+        data['g-recaptcha-response'] = recaptchaValue; // Add reCAPTCHA token
 
-        // Explicitly construct URLSearchParams for the fetch body
-        const payload = new URLSearchParams();
-        payload.append("form-name", "contact"); // Ensure form-name is always sent
-        payload.append("bot-field", formData.get("bot-field")?.toString() || ""); // Include honeypot value (even if empty)
-        payload.append('g-recaptcha-response', recaptchaValue); // Add reCAPTCHA response
+        console.log("Submitting form data to /api/contact:", data);
 
-        // Add other form fields
-        for (const [key, value] of formData.entries()) {
-            // Avoid duplicating fields already added
-            if (key !== "form-name" && key !== "bot-field" && key !== "g-recaptcha-response") {
-                payload.append(key, value.toString());
-            }
-        }
-
-        console.log("Submitting form via fetch to Netlify with explicit payload...");
-        console.log("Payload:", payload.toString()); // Log the payload for debugging
-
-        // Submit via fetch
-        fetch("/", { // Posting to the root path is standard for Netlify forms with JS
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: payload.toString(),
-        })
-            .then(response => {
-                if (!response.ok) {
-                    // Log detailed error info if possible
-                    response.text().then(text => {
-                        console.error(`Form submission failed: ${response.status} ${response.statusText}`, text);
-                        setError(true);
-                        alert(`Form submission failed: ${response.statusText}. Please try again.`);
-                    }).catch(() => {
-                        // Fallback if reading response text fails
-                        console.error(`Form submission failed: ${response.status} ${response.statusText}`);
-                        setError(true);
-                        alert(`Form submission failed: ${response.statusText}. Please try again.`);
-                    });
-                    // We still need to throw an error to be caught by the outer .catch
-                    throw new Error(`Form submission failed with status ${response.status}`);
-                }
-                // Successful submission
-                console.log("Form successfully submitted to Netlify via fetch!");
-                setSubmitted(true);
-                if (formRef.current) {
-                    formRef.current.reset(); // Clear the form
-                }
-                recaptchaRef.current?.reset(); // Reset reCAPTCHA
-            })
-            .catch(error => {
-                // Catch fetch errors (network issues) or the error thrown above
-                if (!error.message.includes('Form submission failed')) { // Avoid double alerting
-                    console.error("Fetch error submitting form:", error);
-                    setError(true);
-                    alert("An error occurred submitting the form. Please check your connection and try again.");
-                }
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
             });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                console.error("API Error Response:", result);
+                throw new Error(result.message || `Form submission failed with status ${response.status}`);
+            }
+
+            // Successful submission
+            console.log("API Success Response:", result);
+            setSubmitted(true);
+            formRef.current?.reset(); // Clear the form
+            recaptchaRef.current?.reset(); // Reset reCAPTCHA
+            setRecaptchaValue(null); // Reset reCAPTCHA state
+
+        } catch (error: any) {
+            console.error("Form submission fetch error:", error);
+            setError(error.message || "An unexpected error occurred. Please try again.");
+            // Optionally reset reCAPTCHA on error too, depending on desired UX
+            // recaptchaRef.current?.reset();
+            // setRecaptchaValue(null);
+        }
     }
 
     // Handle reCAPTCHA change
     const handleRecaptchaChange = (value: string | null) => {
         setRecaptchaValue(value);
+        if (value) {
+            setError(null); // Clear error when reCAPTCHA is completed
+        }
     };
 
     // Display success message if form submitted
@@ -125,6 +98,8 @@ export default function FormBlock(props) {
                 data-sb-field-path={fieldPath}
             >
                 <p>Thank you for your submission!</p>
+                {/* Optional: Add a button to submit another message */}
+                {/* <button onClick={() => setSubmitted(false)} className="mt-4 text-blue-500 underline">Submit another message</button> */}
             </div>
         );
     }
@@ -147,23 +122,23 @@ export default function FormBlock(props) {
                     : undefined,
                 styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
             )}
-            name="contact"
-            id="contact"
-            method="POST"
+            name={elementId} // Keep name for potential non-JS fallback or styling
+            id={elementId}   // Keep id for potential labels
             onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
+            // Removed Netlify attributes: data-netlify, data-netlify-honeypot, data-netlify-recaptcha
+            // Removed method="POST" as it's handled by fetch
         >
+            {/* Display Submission Error Message */}
             {error && (
-                <div className="text-red-500 mb-4">
-                    There was an error submitting the form. Please try again.
+                <div className="w-full p-3 mb-4 text-center text-red-700 bg-red-100 border border-red-400 rounded">
+                    {error}
                 </div>
             )}
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
+
+            {/* Removed hidden Netlify inputs: form-name, bot-field */}
+            
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
@@ -184,7 +159,7 @@ export default function FormBlock(props) {
                 <div className="w-full mt-4">
                     <ReCAPTCHA
                         ref={recaptchaRef}
-                        sitekey="6LdEFxUrAAAAAKAfXirVjGLOiILHFOFDA1hzb9E7" // Using the actual production site key
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6LdEFxUrAAAAAKAfXirVjGLOiILHFOFDA1hzb9E7'} // Using ENV Var with fallback to your key
                         onChange={handleRecaptchaChange}
                     />
                     <small className="text-gray-500 mt-2 block">

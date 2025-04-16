@@ -16,7 +16,8 @@
         "glob": "^10.4.2",
         "markdown-to-jsx": "^7.7.3",
         "marked": "^14.1.2",
-        "next": "15.2.0",
+        "next": "^15.3.0",
+        "nodemailer": "^6.10.1",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-google-recaptcha": "^3.1.0",
@@ -25,7 +26,7 @@
     },
     "devDependencies": {
         "@base2/pretty-print-object": "^1.0.2",
-        "@stackbit/cms-git": "^1.0.32",
+        "@stackbit/cms-git": "^0.0.14",
         "@stackbit/types": "^2.1.10",
         "@types/glob": "^8.1.0",
         "@types/react": "^19.0.4",
