@@ -22,12 +22,12 @@ export default function FeaturedPeopleSection(props) {
             {...getDataAttrs(props)}
         >
             <div className={classNames('w-full', 'flex', 'flex-col', mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' }))}>
-                {badge && <Badge {...badge} className="w-full max-w-sectionBody" {...(enableAnnotations && { 'data-sb-field-path': '.badge' })} />}
+                {badge && <Badge {...badge} className="w-full max-w-sectionBody" {...(enableAnnotations ? { 'data-sb-field-path': '.badge' } : {})} />}
                 {title && (
                     <TitleBlock
                         {...title}
                         className={classNames('w-full', 'max-w-sectionBody', { 'mt-4': badge?.label })}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
+                        {...(enableAnnotations ? { 'data-sb-field-path': '.title' } : {})}
                     />
                 )}
                 {subtitle && (
@@ -42,7 +42,7 @@ export default function FeaturedPeopleSection(props) {
                                 'mt-4': badge?.label || title?.text
                             }
                         )}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
+                        {...(enableAnnotations ? { 'data-sb-field-path': '.subtitle' } : {})}
                     >
                         {subtitle}
                     </p>
@@ -59,14 +59,14 @@ export default function FeaturedPeopleSection(props) {
                         className={classNames('flex', 'flex-wrap', 'items-center', 'gap-4', {
                             'mt-12': badge?.label || title?.text || subtitle || people.length > 0
                         })}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.actions' })}
+                        {...(enableAnnotations ? { 'data-sb-field-path': '.actions' } : {})}
                     >
                         {actions.map((action, index) => (
                             <Action
                                 key={index}
                                 {...action}
                                 className="lg:whitespace-nowrap"
-                                {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
+                                {...(enableAnnotations ? { 'data-sb-field-path': `.${index}` } : {})}
                             />
                         ))}
                     </div>
@@ -95,11 +95,11 @@ function FeaturedPeopleThreeCol({ people = [], hasTopMargin, hasSectionTitle, ha
     return (
         <div
             className={classNames('grid', 'gap-10', 'sm:grid-cols-2', 'lg:grid-cols-3', { 'mt-12': hasTopMargin })}
-            {...(hasAnnotations && { 'data-sb-field-path': '.people' })}
+            {...(hasAnnotations ? { 'data-sb-field-path': '.people' } : {})}
         >
             {people.map((person, index) => {
                 if (!person || typeof person !== 'object') return null;
-                return <FeaturedPerson key={index} {...person} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                return <FeaturedPerson key={index} {...person} hasSectionTitle={hasSectionTitle} {...(hasAnnotations ? { 'data-sb-field-path': `.${index}` } : {})} />
             })}
         </div>
     );
@@ -111,11 +111,11 @@ function FeaturedPeopleFourCol({ people = [], hasTopMargin, hasSectionTitle, has
     return (
         <div
             className={classNames('grid', 'gap-10', 'sm:grid-cols-2', 'lg:grid-cols-4', { 'mt-12': hasTopMargin })}
-            {...(hasAnnotations && { 'data-sb-field-path': '.people' })}
+            {...(hasAnnotations ? { 'data-sb-field-path': '.people' } : {})}
         >
             {people.map((person, index) => {
                 if (!person || typeof person !== 'object') return null;
-                return <FeaturedPerson key={index} {...person} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                return <FeaturedPerson key={index} {...person} hasSectionTitle={hasSectionTitle} {...(hasAnnotations ? { 'data-sb-field-path': `.${index}` } : {})} />
             })}
         </div>
     );
@@ -128,7 +128,7 @@ function FeaturedPeopleMixedCol({ people = [], hasTopMargin, hasSectionTitle, ha
     return (
         <div
             className={classNames('grid', 'gap-10', 'sm:grid-cols-2', 'lg:grid-cols-16', { 'mt-12': hasTopMargin })}
-            {...(hasAnnotations && { 'data-sb-field-path': '.people' })}
+            {...(hasAnnotations ? { 'data-sb-field-path': '.people' } : {})}
         >
             {people.map((person, index) => {
                 if (!person || typeof person !== 'object') return null;
@@ -137,7 +137,7 @@ function FeaturedPeopleMixedCol({ people = [], hasTopMargin, hasSectionTitle, ha
                         key={index}
                         {...person}
                         hasSectionTitle={hasSectionTitle}
-                        {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+                        {...(hasAnnotations ? { 'data-sb-field-path': `.${index}` } : {})}
                         className={classNames('lg:col-span-4', {
                             'lg:col-start-3 lg:col-end-span4': (index + 3) % 7 === 0,
                             'lg:col-start-span4 lg:col-end-neg3': (index + 1) % 7 === 0
@@ -179,21 +179,21 @@ function FeaturedPerson(props) {
                 <ImageBlock
                     {...image}
                     className={classNames('flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
-                    {...(fieldPath && { 'data-sb-field-path': '.image' })}
+                    {...(fieldPath ? { 'data-sb-field-path': '.image' } : {})}
                 />
             )}
             {name && (
-                <TitleTag className="h3" {...(fieldPath && { 'data-sb-field-path': '.name' })}>
+                <TitleTag className="h3" {...(fieldPath ? { 'data-sb-field-path': '.name' } : {})}>
                     {name}
                 </TitleTag>
             )}
             {role && (
-                <p className="mt-2" {...(fieldPath && { 'data-sb-field-path': '.role' })}>
+                <p className="mt-2" {...(fieldPath ? { 'data-sb-field-path': '.role' } : {})}>
                     {role}
                 </p>
             )}
             {bio && (
-                <Markdown options={{ forceBlock: true, forceWrapper: true }} className="mt-4 sb-markdown" {...(fieldPath && { 'data-sb-field-path': '.bio' })}>
+                <Markdown options={{ forceBlock: true, forceWrapper: true }} className="mt-4 sb-markdown" {...(fieldPath ? { 'data-sb-field-path': '.bio' } : {})}>
                     {bio}
                 </Markdown>
             )}
