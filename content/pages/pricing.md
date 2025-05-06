@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: Portfolio
 slug: pricing
 sections:
   - title:

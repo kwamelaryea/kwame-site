@@ -1,10 +1,11 @@
 {
     "type": "Person",
-    "name": "Asher Schmitt",
-    "role": "Co-founder & CEO",
+    "name": "Rhonda Piper",
+    "role": "Job title",
     "image": {
-        "url": "/images/avatar3.svg",
-        "altText": "Asher Schmitt",
+        "type": "ImageBlock",
+        "url": "/images/avatar1.svg",
+        "altText": "First Last",
         "styles": {
             "self": {
                 "borderRadius": "medium",
@@ -12,11 +13,9 @@
                     "mb-8"
                 ]
             }
-        },
-        "type": "ImageBlock"
+        }
     },
     "colors": "bg-light-fg-dark",
-    "elementId": null,
     "styles": {
         "self": {
             "padding": [
@@ -32,6 +31,5 @@
             "borderRadius": "none",
             "justifyContent": "center"
         }
-    },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    }
 }
